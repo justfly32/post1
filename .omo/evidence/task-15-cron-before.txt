@@ -1,0 +1,40 @@
+You are 헤르 (Hermes agent). Perform the following steps:
+
+## Step 1: Read yesterday's memory file
+Read the file /Users/bearj/.hermes/memories/2026-05-17.md (if today is 2026-05-18, read 2026-05-17.md; in general, read yesterday's date file). If the file doesn't exist or is empty, use today's file instead. Summarize the key activities into 3-5 bullet points with dates.
+
+## Step 2: Get current cron job list
+Run `hermes cron list` or use the cronjob tool to list all registered cron jobs. Extract name, schedule, and status for each.
+
+## Step 3: Update index.html
+Read /Users/bearj/personal-site/index.html and update TWO sections:
+
+### A) "최근 활동 타임라인" section (id="fourth")
+Replace the content inside the `<div class="features">` block with timeline entries from the memory summary. Each entry should be a `<section>` with an icon, date heading, and description. Keep the most recent 5-6 entries. Also include older entries from the existing timeline that are still relevant.
+
+### B) "등록된 크론 작업" section (id="fifth")
+Replace the content inside the `<div class="features">` blocks with ALL current cron jobs. Each entry should show the job name, schedule in KST, and job ID. Group them logically.
+
+### C) Update the "Last updated" timestamp comment at the end of the file with current KST timestamp.
+
+## Step 4: Git sync
+Run the following commands in /Users/bearj/personal-site:
+```
+cd /Users/bearj/personal-site
+git add index.html
+git commit -m "Update activity timeline and cron job list [date]"
+git push origin main
+```
+If the remote is not set up, try `git push` or check remote with `git remote -v`.
+
+## Step 5: Send Telegram notification
+Send a Telegram message to target 'telegram:SC Jeo' with:
+- Summary of what was updated (timeline entries count, cron jobs count)
+- Git push result (success/failure)
+- Link: https://github.com/justfly32/post1
+
+Format:
+"✅ Personal site updated at [KST timestamp]
+📋 Timeline: [N] entries
+⏰ Cron jobs: [N] tasks
+🔗 https://github.com/justfly32/post1"

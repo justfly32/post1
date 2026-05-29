@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bear J의 개인 홈페이지</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+/* Approximate Editorial style */
+body {
+	background: #fff;
+	margin: 0; /* 추가: 브라우저 기본 여백 제거 */
+}
+#wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-direction: column; /* 추가: 좌우 배치에서 상하 배치로 변경 */
+	-moz-align-items: stretch;
+	-webkit-align-items: stretch;
+	-ms-align-items: stretch;
+	align-items: stretch;
+}
+#sidebar {
+	background: #2b2b2b;
+	color: #ccc;
+	width: 100%; /* 수정: 전체 너비 사용 */
+	padding: 1em 2em; /* 수정: 상단바에 맞게 패딩 축소 */
+	position: sticky;
+	top: 0;
+	z-index: 1000; /* 추가: 스크롤 시 메인 콘텐츠 위에 위치하도록 설정 */
+	display: flex; /* 추가: 내부 요소 가로 배치 */
+	align-items: center;
+	justify-content: space-between;
+}
+#sidebar > :last-child {
+	margin-bottom: 0;
+}
+#sidebar h2 {
+	color: #fff;
+	margin: 0; /* 수정: 여백 제거 */
+	padding: 0;
+	font-size: 1.5em; /* 수정: 폰트 크기 약간 축소 */
+	line-height: 1.3;
+	white-space: nowrap; /* 추가: 제목 줄바꿈 방지 */
+}
+#sidebar nav {
+	display: flex; /* 추가: 메뉴 항목들 가로 배치 */
+	gap: 1.5em; /* 추가: 메뉴 항목 간격 */
+	flex-wrap: wrap; /* 추가: 공간이 부족하면 줄바꿈 */
+}
+#sidebar nav a {
+	display: inline-block; /* 수정: 블록에서 인라인 블록으로 변경 */
+	color: #ccc;
+	text-decoration: none;
+	border-top: none; /* 수정: 기존 상단 테두리 제거 */
+	padding: 0.5em 0;
+}
+#sidebar nav a:hover {
+	color: #fff;
+}
+#main {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	-moz-flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+	padding: 4.5em 3em;
+}
+@media screen and (max-width: 980px) {
+	/* wrapper flex-direction: column은 이미 기본으로 적용됨 */
+	#sidebar {
+		flex-direction: column; /* 모바일에서는 다시 세로로 배치 */
+		padding: 1em;
+	}
+	#sidebar h2 {
+		margin-bottom: 1em; /* 모바일에서 제목 아래 여백 추가 */
+	}
+	#sidebar nav {
+		justify-content: center; /* 모바일에서 메뉴 중앙 정렬 */
+	}
+	#main {
+		padding: 3em 2em;
+	}
+}
+@media screen and (max-width: 736px) {
+	#main {
+		padding: 2em 1.5em;
+	}
+}
+/* Content styling */
+section {
+	border-top: solid 1px #f4f4f4;
+	margin: 3em 0 0 0;
+	padding: 3em 0 0 0;
+}
+section:first-child {
+	border-top: 0;
+	margin-top: 0;
+	padding-top: 0;
+}
+section > :last-child {
+	margin-bottom: 0;
+}
+section h2 {
+	font-size: 1.75em;
+	margin: 0 0 1em 0;
+}
+.section-title {
+	font-size: 1.1em;
+	color: #777;
+	margin-bottom: 2em;
+}
+.features {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+.feature {
+	width: 30%;
+	margin: 1.5em 1%;
+	padding: 2em;
+	text-align: center;
+	border: solid 1px #efefef;
+}
+.feature.icon {
+	font-size: 2.5em;
+	margin-bottom: 0.75em;
+}
+.feature h3 {
+	font-size: 1.25em;
+	margin: 0 0 0.5em 0;
+}
+.image {
+	display: inline-block;
+	border: solid 1px #efefef;
+}
+.image img {
+	display: block;
+	width: 100%;
+}
+/* Increase main content width */
+.container {
+	width: 100%;
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 0 2em;
+	box-sizing: border-box;
+}
+/* Push footer down */
+#footer {
+	margin-top: 4em;
+	text-align: center;
+}
+/* Remove bullet points from footer */
+#footer .copyright {
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: center !important;
+}
+#footer .copyright li {
+	display: block !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: center !important;
+}
+#footer .copyright li::before,
+#footer .copyright li:before {
+	content: none !important;
+}
+/* Center-align CTA buttons */
+	.actions {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.actions .button {
+		margin: 0.5em 1em;
+	}
+/* Heatmap styles */
+.heatmap-container {
+	margin: 2em 0;
+	overflow-x: auto;
+}
+.heatmap {
+	display: flex;
+	gap: 3px;
+	padding: 1em 0;
+}
+.heatmap-row {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+.heatmap-row-label {
+	width: 2em;
+	font-size: 0.75em;
+	color: #767676;
+	text-align: right;
+	padding-right: 0.5em;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.heatmap-cell {
+	width: 12px;
+	height: 12px;
+	border-radius: 2px;
+	background-color: #ebedf0;
+}
+.heatmap-cell.level-1 { background-color: #9be9a8; }
+.heatmap-cell.level-2 { background-color: #40c463; }
+.heatmap-cell.level-3 { background-color: #30a14e; }
+.heatmap-cell.level-4 { background-color: #216e39; }
+.heatmap-cell.today {
+	box-shadow: inset 0 0 0 1px #333;
+}
+/* Stats cards */
+.stats-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1em;
+	margin: 2em 0;
+}
+.stats-card {
+	background: #f8f9fa;
+	border: solid 1px #e1e4e8;
+	border-radius: 6px;
+	padding: 1.5em 2em;
+	text-align: center;
+	min-width: 140px;
+}
+.stats-card .value {
+	font-size: 2em;
+	font-weight: bold;
+	color: #24292e;
+	margin-bottom: 0.25em;
+}
+.stats-card .label {
+	font-size: 0.85em;
+	color: #586069;
+}
+/* Category tags */
+.category-tags {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5em;
+	margin: 1.5em 0;
+}
+.category-tag {
+	display: inline-block;
+	background: #f1f8ff;
+	color: #0366d6;
+	border: solid 1px #c8e1ff;
+	border-radius: 2em;
+	padding: 0.35em 1em;
+	font-size: 0.85em;
+}
+.category-tag .count {
+	font-weight: bold;
+	margin-left: 0.3em;
+}
+/* Empty state */
+.empty-state {
+	text-align: center;
+	color: #586069;
+	padding: 2em;
+	font-style: italic;
+}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Sidebar (Now Top Navbar) -->
+					<div id="sidebar">
+						<h2>Bear J의 워크스페이스</h2>
+						<nav>
+							<a href="#intro" class="active">소개</a>
+							<a href="#first">에이전트 헤르</a>
+							<a href="#second">사용자 정보</a>
+							<a href="#third">메모리 시스템</a>
+							<a href="#fourth">활동 타임라인</a>
+							<a href="#fifth">크론 작업</a>
+						</nav>
+					</div>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="container">
+									<div class="row">
+										<div class="col-12">
+											<header class="major">
+												<h2>저에 대해</h2>
+											</header>
+											<p>소프트웨어 엔지니어이자 AI 연구에 열정을 가진 Bear J입니다. 일상생산성을 높이기 위해 AI 에이전트 헤르와 협업하며 다양한 자동화 워크플로를 구축하고 있습니다.</p>
+											<ul class="actions">
+												<li><a href="#first" class="button">더 알아보기</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main">
+								<div class="container">
+									<h3>에이전트 헤르 (Her)</h3>
+									<p>총괄 오케스트레이션 비서로서 전체 워크플로우를 관리하고 자동화 전문가로 활동합니다.</p>
+									<div class="features">
+										<section>
+											<span class="icon solid fa-code"></span>
+											<h3>총괄 오케스트레이션 비서</h3>
+											<p>전체 워크플로우를 총괄하여 에이전트, 스크립트, 툴을 조율하고 실행 계획을 제시합니다.</p>
+										</section>
+										<section>
+											<span class="icon solid fa-copy"></span>
+											<h3>자동화 전문</h3>
+											<p>macOS 기반 개발 자동화, 터미널, AppleScript, Docker 등을 활용해 반복 작업을 자동화합니다.</p>
+										</section>
+										<section>
+											<span class="icon solid fa-gem"></span>
+											<h3>신뢰와 충성</h3>
+											<p>실질적인 결과를 제공하고 허무한 약속을 배제하며, 실패 시 디버깅 및 흐름 재조정을 지원합니다.</p>
+										</section>
+									</div>
+									<ul class="actions">
+										<li><a href="#second" class="button">다음으로</a></li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main">
+								<div class="container">
+									<h3>사용자 정보 (Bear J)</h3>
+									<div class="features">
+										<section>
+											<span class="icon solid fa-user"></span>
+											<h3>기본 정보</h3>
+											<p>ID: U0B19DQA6KH<br/>선호 호칭: 고미</p>
+										</section>
+										<section>
+											<span class="icon solid fa-handshake"></span>
+											<h3>작업 관계</h3>
+											<p>2026-05-08 확인된 작업 관계; 팀워크 지향 ("서로 힘 합쳐 잘해보자")</p>
+										</section>
+										<section>
+											<span class="icon solid fa-cog"></span>
+											<h3>선호 사항</h3>
+											<p>대화 중단 시 즉시 중지<br/>중요한 대화 내용 자동 일자별 메모리 저장<br/>매일 00:00 KST Notion 동기화 크론 작업<br/>엄격한 키워드 트리거 없이 필요 시 응답</p>
+										</section>
+									</div>
+									<ul class="actions">
+										<li><a href="#third" class="button">다음으로</a></li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Third Section -->
+							<section id="third" class="main">
+								<div class="container">
+									<h3>메모리 시스템</h3>
+									<div class="features">
+										<section>
+											<span class="icon solid fa-file-alt"></span>
+											<h3>저장 우선순위</h3>
+											<p>1. 사용자 수정 사항<br/>2. 환경 사실<br/>3. 작업 결정</p>
+										</section>
+										<section>
+											<span class="icon solid fa-sync-alt"></span>
+											<h3>자동 백업</h3>
+											<p>매일 00:00 KST에 전날의 YYYY-MM-DD.md 파일을 Notion 에이전트 사용 저널에 업로드</p>
+										</section>
+										<section>
+											<span class="icon solid fa-brain"></span>
+											<h3>핵심 규칙 저장</h3>
+											<p>날짜별 파일에서 반복적으로 필요한 규칙은 ~/.hermes/memories/memory.md에 요약 저장</p>
+										</section>
+									</div>
+									<ul class="actions">
+										<li><a href="#fourth" class="button">다음으로</a></li>
+									</ul>
+								</div>
+							</section>
+
+					<!-- Fourth Section -->
+						<section id="fourth" class="main">
+							<div class="container">
+								<h3>최근 활동 타임라인</h3>
+{% if timeline_items %}
+								<div class="features">
+{% for item in timeline_items %}
+									<section>
+										<span class="icon solid {{ item.icon }}"></span>
+										<h3>{{ item.date }}</h3>
+										<p><strong>{{ item.title }}</strong>{% if item.detail %} — {{ item.detail }}{% endif %}</p>
+									</section>
+{% endfor %}
+								</div>
+{% else %}
+								<div class="empty-state">아직 기록된 활동이 없습니다.</div>
+{% endif %}
+{% if heatmap_rows %}
+								<div class="heatmap-container">
+									<div class="heatmap">
+{% for row in heatmap_rows %}
+										<div class="heatmap-row">
+											<div class="heatmap-row-label">{{ row.label }}</div>
+{% for cell in row.cells %}
+											<div class="heatmap-cell level-{{ cell.level }}{% if cell.today %} today{% endif %}" title="{{ cell.date }}: {{ cell.count }} activities"></div>
+{% endfor %}
+										</div>
+{% endfor %}
+									</div>
+								</div>
+{% endif %}
+{% if stats_cards %}
+								<div class="stats-grid">
+{% for card in stats_cards %}
+									<div class="stats-card">
+										<div class="value">{{ card.value }}</div>
+										<div class="label">{{ card.label }}</div>
+									</div>
+{% endfor %}
+								</div>
+{% endif %}
+{% if categories %}
+								<div class="category-tags">
+{% for cat in categories %}
+									<span class="category-tag">{{ cat.name }}<span class="count">{{ cat.count }}</span></span>
+{% endfor %}
+								</div>
+{% endif %}
+								<ul class="actions">
+									<li><a href="#fifth" class="button">다음으로</a></li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Fifth Section -->
+						<section id="fifth" class="main">
+							<div class="container">
+								<h3>등록된 크론 작업</h3>
+{% if cron_jobs %}
+								<div class="features">
+{% for job in cron_jobs %}
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>{{ job.name }}</h3>
+										<p>{{ job.schedule_display }}<br/>Job ID: <code>{{ job.id }}</code><br/>상태: <span style="color:{% if job.status == 'ok' %}green{% elif job.status == 'error' %}red{% else %}gray{% endif %}">{% if job.status == 'ok' %}✅{% elif job.status == 'error' %}❌{% else %}❓{% endif %} {{ job.status }}</span></p>
+									</section>
+{% endfor %}
+								</div>
+{% else %}
+								<div class="empty-state">등록된 크론 작업이 없습니다.</div>
+{% endif %}
+							</div>
+						</section>
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<div class="container">
+									<h3>함께해볼까요?</h3>
+									<p>이 홈페이지는 Bear J의 활동 기록 및 에이전트 헤르와의 협업 내역을 정리하기 위해 만들어졌습니다. 궁금한 점이나 협업 제안이 있으면 언제든 알려주세요!</p>
+									<ul class="actions">
+										<li><a href="https://github.com/justfly32" class="button primary">GitHub</a></li>
+										<li><a href="#" class="button">연락하기</a></li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Spacer for footer -->
+							<section id="spacer" class="main" style="height: 4em;"></section>
+
+						</div> <!-- End of #main -->
+					</div> <!-- End of #wrapper -->
+
+		<!-- Footer -->
+			<div id="footer">
+				<ul class="copyright">
+					<li>&copy; Bear J. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	<!-- Last updated: {{ generated_at }} -->
+	</body>
+</html>

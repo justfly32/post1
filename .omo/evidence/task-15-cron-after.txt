@@ -1,0 +1,16 @@
+[IMPORTANT: Cron job — run the site generator and deploy.]
+
+Run the following commands in order:
+
+1. cd /Users/bearj/personal-site
+2. python3 scripts/generate_site.py --memories-dir /Users/bearj/.hermes/memories/daily_memories/ --cron-file /Users/bearj/.hermes/cron/jobs.json --output index.html
+   - If this fails (non-zero exit), capture stderr, abort with ERROR message, do NOT continue
+3. git add -A
+4. git commit -m "Update personal site $(TZ=Asia/Seoul date +%Y-%m-%d)"
+5. git pull --rebase origin main
+6. git push origin main
+   - If push fails (conflict, network), abort with ERROR message
+
+After successful push, send a Telegram notification:
+- Message: "✅ 개인 사이트 업데이트 완료 ($(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M'))"
+- Via: the existing notification mechanism

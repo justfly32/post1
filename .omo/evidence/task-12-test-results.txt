@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.4, pytest-9.0.3, pluggy-1.6.0 -- /Users/bearj/personal-site/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/bearj/personal-site
+collecting ... collected 25 items
+
+tests/test_parser.py::TestParseDailyMemory::test_returns_activity_for_valid_markdown_with_completed PASSED [  4%]
+tests/test_parser.py::TestParseDailyMemory::test_returns_activity_for_valid_markdown_with_main_work_and_next_steps PASSED [  8%]
+tests/test_parser.py::TestParseDailyMemory::test_uses_section_aliases_to_normalize_names PASSED [ 12%]
+tests/test_parser.py::TestParseDailyMemory::test_returns_none_for_nonexistent_file PASSED [ 16%]
+tests/test_parser.py::TestParseDailyMemory::test_returns_none_for_empty_file PASSED [ 20%]
+tests/test_parser.py::TestParseDailyMemory::test_handles_nested_list_items PASSED [ 24%]
+tests/test_parser.py::TestParseDailyMemory::test_handles_bold_markdown_in_content PASSED [ 28%]
+tests/test_parser.py::TestParseAllMemories::test_returns_sorted_list_for_directory_with_md_files PASSED [ 32%]
+tests/test_parser.py::TestParseAllMemories::test_returns_empty_list_for_nonexistent_directory PASSED [ 36%]
+tests/test_parser.py::TestParseAllMemories::test_skips_files_that_return_none PASSED [ 40%]
+tests/test_parser.py::TestMemoryToHtml::test_converts_dash_item_to_ul_li PASSED [ 44%]
+tests/test_parser.py::TestMemoryToHtml::test_converts_bold_markdown_to_strong PASSED [ 48%]
+tests/test_parser.py::TestMemoryToHtml::test_handles_empty_string PASSED [ 52%]
+tests/test_parser.py::TestMemoryToHtml::test_handles_nested_items_with_proper_nesting PASSED [ 56%]
+tests/test_parser.py::TestMemoryToHtml::test_empty_line_between_items_closes_and_reopens_ul PASSED [ 60%]
+tests/test_cron_reader.py::TestCronToDisplay::test_daily_at_0800_kst PASSED [ 64%]
+tests/test_cron_reader.py::TestCronToDisplay::test_daily_at_0000_kst PASSED [ 68%]
+tests/test_cron_reader.py::TestCronToDisplay::test_every_minute PASSED   [ 72%]
+tests/test_cron_reader.py::TestCronToDisplay::test_every_hour_at_00_minute PASSED [ 76%]
+tests/test_cron_reader.py::TestCronToDisplay::test_daily_at_0930_kst PASSED [ 80%]
+tests/test_cron_reader.py::TestCronToDisplay::test_non_five_part_input_returns_as_is PASSED [ 84%]
+tests/test_cron_reader.py::TestReadCronJobs::test_returns_list_of_cronjob_for_valid_json_with_enabled_jobs PASSED [ 88%]
+tests/test_cron_reader.py::TestReadCronJobs::test_skips_jobs_with_enabled_false PASSED [ 92%]
+tests/test_cron_reader.py::TestReadCronJobs::test_returns_empty_list_for_missing_file PASSED [ 96%]
+tests/test_cron_reader.py::TestReadCronJobs::test_returns_empty_list_for_malformed_json PASSED [100%]
+
+============================== 25 passed in 0.01s ==============================

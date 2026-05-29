@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.4, pytest-9.0.3, pluggy-1.6.0 -- /Users/bearj/personal-site/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/bearj/personal-site
+collecting ... collected 25 items
+
+tests/test_generator.py::TestFlattenActivities::test_flatten_activities PASSED [  4%]
+tests/test_generator.py::TestFlattenActivities::test_flatten_activities_skips_nested PASSED [  8%]
+tests/test_generator.py::TestFlattenActivities::test_flatten_activities_extracts_title_detail PASSED [ 12%]
+tests/test_generator.py::TestFlattenActivities::test_flatten_activities_sorts_by_date_desc PASSED [ 16%]
+tests/test_generator.py::TestBuildHeatmap::test_build_heatmap_empty PASSED [ 20%]
+tests/test_generator.py::TestBuildHeatmap::test_build_heatmap_has_7_rows PASSED [ 24%]
+tests/test_generator.py::TestComputeStats::test_compute_stats_empty PASSED [ 28%]
+tests/test_generator.py::TestComputeStats::test_compute_stats_counts PASSED [ 32%]
+tests/test_generator.py::TestCategorizeActivities::test_categorize_activities PASSED [ 36%]
+tests/test_generator.py::TestCategorizeActivities::test_categorize_activities_empty PASSED [ 40%]
+tests/test_generator.py::TestRenderHtml::test_render_html_has_doctype PASSED [ 44%]
+tests/test_generator.py::TestRenderHtml::test_render_html_has_all_static_sections PASSED [ 48%]
+tests/test_generator.py::TestRenderHtml::test_render_html_has_scripts PASSED [ 52%]
+tests/test_generator.py::TestRenderHtml::test_render_html_has_timestamp PASSED [ 56%]
+tests/test_generator.py::TestRenderHtml::test_render_html_empty_data_no_crash PASSED [ 60%]
+tests/test_generator.py::TestRenderHtml::test_render_html_heatmap_present PASSED [ 64%]
+tests/test_generator.py::TestRenderHtml::test_render_html_stats_present PASSED [ 68%]
+tests/test_generator.py::TestRenderHtml::test_render_html_categories_present PASSED [ 72%]
+tests/test_idempotency.py::TestIdempotency::test_idempotent_except_timestamp PASSED [ 76%]
+tests/test_idempotency.py::TestIdempotency::test_stable_sort PASSED      [ 80%]
+tests/test_integration.py::TestIntegration::test_end_to_end_generation PASSED [ 84%]
+tests/test_integration.py::TestIntegration::test_generated_html_well_formed PASSED [ 88%]
+tests/test_integration.py::TestIntegration::test_cron_section_present PASSED [ 92%]
+tests/test_integration.py::TestIntegration::test_empty_memories_no_crash PASSED [ 96%]
+tests/test_integration.py::TestIntegration::test_lock_file_cleanup PASSED [100%]
+
+============================== 25 passed in 0.32s ==============================
