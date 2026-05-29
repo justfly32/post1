@@ -103,9 +103,13 @@
 		padding: 2em 1.5em;
 	}
 	.feature {
-		width: 100%;
-		margin: 0.75em 0;
-		padding: 1.5em;
+		width: calc(50% - 1em);
+		margin: 0.5em;
+		padding: 1.25em;
+	}
+	.feature:last-child:nth-child(odd) {
+		width: calc(50% - 1em);
+		max-width: calc(50% - 1em);
 	}
 	.features section {
 		width: 100%;
@@ -138,10 +142,16 @@
 		padding: 1.5em 1em;
 	}
 	.feature {
-		padding: 1em;
+		width: 100%;
+		margin: 0.5em 0;
+		padding: 0.75em;
 	}
 	.feature h3 {
-		font-size: 1.1em;
+		font-size: 1em;
+		margin: 0 0 0.3em 0;
+	}
+	.feature p {
+		font-size: 0.9em;
 	}
 	.stats-card {
 		min-width: 100%;
