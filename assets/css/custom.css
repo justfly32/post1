@@ -104,38 +104,32 @@
 	}
 	.feature {
 		width: 100%;
-		margin: 0.5em 0;
-		padding: 1em;
-		display: grid;
-		grid-template-columns: auto 1fr;
-		gap: 0.3em 1em;
+		margin: 0.75em 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		gap: 0.25em 0.75em;
 		text-align: left;
-		align-items: start;
-		border: solid 1px #efefef;
 	}
 	.feature > .icon {
-		grid-row: 1 / -1;
-		grid-column: 1;
-		font-size: 1.5em;
-		width: 1.5em;
-		height: 1.5em;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.feature > .icon:before {
-		font-size: 1em;
-		line-height: 1;
+		flex: 0 0 1.25em;
+		font-size: 1.25em;
+		order: 0;
 	}
 	.feature h3 {
-		grid-column: 2;
-		grid-row: 1;
+		flex: 1 1 calc(100% - 2em);
+		font-size: 1em;
 		margin: 0;
+		order: 1;
 	}
 	.feature p {
-		grid-column: 2;
-		grid-row: 2;
+		flex: 1 1 100%;
+		font-size: 0.9em;
 		margin: 0;
+		order: 2;
+		padding-left: calc(1.25em + 0.75em);
 	}
 	.features section {
 		width: 100%;
@@ -168,19 +162,19 @@
 		padding: 1.5em 1em;
 	}
 	.feature {
-		padding: 0.75em;
-		gap: 0.5em 0.75em;
+		margin: 0.5em 0;
+		gap: 0.2em 0.5em;
 	}
 	.feature > .icon {
-		font-size: 1.25em;
-		width: 1.25em;
-		height: 1.25em;
+		flex-basis: 1em;
+		font-size: 1em;
 	}
 	.feature h3 {
-		font-size: 1em;
+		font-size: 0.95em;
 	}
 	.feature p {
 		font-size: 0.85em;
+		padding-left: calc(1em + 0.5em);
 	}
 	.stats-card {
 		min-width: 100%;
@@ -235,12 +229,6 @@ section h2 {
 	margin: 1.5em 1%;
 	padding: 2em;
 	text-align: center;
-	border: solid 1px #efefef;
-}
-
-.feature.icon {
-	font-size: 2.5em;
-	margin-bottom: 0.75em;
 }
 
 .feature h3 {
