@@ -85,8 +85,66 @@
 }
 
 @media screen and (max-width: 736px) {
+	#sidebar {
+		padding: 0.75em;
+	}
+	#sidebar h2 {
+		font-size: 1.1em;
+		margin-bottom: 0.5em;
+	}
+	#sidebar nav {
+		gap: 0.5em;
+	}
+	#sidebar nav a {
+		font-size: 0.85em;
+		padding: 0.3em 0.5em;
+	}
 	#main {
 		padding: 2em 1.5em;
+	}
+	.feature {
+		width: 100%;
+		margin: 0.75em 0;
+		padding: 1.5em;
+	}
+	.features section {
+		width: 100%;
+		margin: 0.75em 0;
+		padding: 1em;
+		border-bottom: solid 1px #efefef;
+	}
+	.features section:last-child {
+		border-bottom: none;
+	}
+	.stats-card {
+		min-width: calc(50% - 1em);
+		flex: 1 1 auto;
+		padding: 1em;
+	}
+	.heatmap-cell {
+		width: 14px;
+		height: 14px;
+	}
+	.container {
+		padding: 0 1em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#sidebar h2 {
+		font-size: 1em;
+	}
+	#main {
+		padding: 1.5em 1em;
+	}
+	.feature {
+		padding: 1em;
+	}
+	.feature h3 {
+		font-size: 1.1em;
+	}
+	.stats-card {
+		min-width: 100%;
 	}
 }
 
