@@ -83,6 +83,7 @@
 		padding: 3em 2em;
 	}
 	.features {
+		flex-direction: row;
 		gap: 1em;
 	}
 	.feature {
@@ -122,10 +123,12 @@
 		padding: 2em 1.5em;
 	}
 	.features {
+		flex-direction: column;
 		gap: 0.75em;
 	}
 	.feature {
 		width: 100%;
+		max-width: 100%;
 		padding: 0.75em 0;
 		gap: 0.25em 0.75em;
 	}
@@ -172,6 +175,7 @@
 		padding: 1.5em 1em;
 	}
 	.features {
+		flex-direction: column;
 		gap: 0.5em;
 	}
 	.feature {
