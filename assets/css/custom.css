@@ -103,13 +103,25 @@
 		padding: 2em 1.5em;
 	}
 	.feature {
-		width: calc(50% - 1em);
-		margin: 0.5em;
-		padding: 1.25em;
+		width: 100%;
+		margin: 0.5em 0;
+		padding: 1em;
+		display: flex;
+		flex-direction: row;
+		text-align: left;
+		align-items: flex-start;
+		gap: 1em;
 	}
-	.feature:last-child:nth-child(odd) {
-		width: calc(50% - 1em);
-		max-width: calc(50% - 1em);
+	.feature .icon {
+		flex-shrink: 0;
+		font-size: 1.5em;
+		margin: 0.15em 0 0 0;
+	}
+	.feature h3 {
+		margin: 0 0 0.3em 0;
+	}
+	.feature p {
+		margin: 0;
 	}
 	.features section {
 		width: 100%;
@@ -142,16 +154,18 @@
 		padding: 1.5em 1em;
 	}
 	.feature {
-		width: 100%;
-		margin: 0.5em 0;
 		padding: 0.75em;
+		gap: 0.75em;
+	}
+	.feature .icon {
+		font-size: 1.25em;
 	}
 	.feature h3 {
 		font-size: 1em;
-		margin: 0 0 0.3em 0;
+		margin: 0 0 0.2em 0;
 	}
 	.feature p {
-		font-size: 0.9em;
+		font-size: 0.85em;
 	}
 	.stats-card {
 		min-width: 100%;
