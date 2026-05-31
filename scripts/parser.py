@@ -33,8 +33,14 @@ def parse_daily_memory(filepath: str) -> Optional[Activity]:
     if date_match:
         date = date_match.group(1)
     else:
-        # Fallback to filename
-        date = Path(filepath).stem
+        # Fallback to filename — try YYYYMMDD format (e.g. world_news_20260601.md)
+        stem = Path(filepath).stem
+        yyyymmdd = re.search(r"(\d{4})(\d{2})(\d{2})", stem)
+        if yyyymmdd:
+            date = f"{yyyymmdd.group(1)}-{yyyymmdd.group(2)}-{yyyymmdd.group(3)}"
+        else:
+            # Try YYYY-MM-DD already in stem
+            date = stem
 
     # Initialize result with known fields
     result = Activity(date=date)
