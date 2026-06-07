@@ -9,7 +9,7 @@ except ImportError:
     from models import CronJob
 
 
-def read_cron_jobs(filepath: str | None = None) -> list[CronJob]:
+def read_cron_jobs(filepath: Optional[str] = None) -> list[CronJob]:
     if filepath is None:
         filepath = str(Path.home() / ".hermes" / "cron" / "jobs.json")
     """Read and filter cron jobs from JSON file.
