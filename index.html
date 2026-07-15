@@ -424,6 +424,132 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ 가격 섹션 조정</strong> — 메인 하단 가격 섹션 제거, `/pricing` 전용 페이지 생성, 네비게이션 링크 연결</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ 가격 금액 미표시 처리</strong> — `pricing/page.tsx` 내 구체적 금액을 `—`로 수정, 버튼 문구 "문의하기"로 변경</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ 아카이브 데이터 정리</strong> — 7/14 생성 구 데이터 및 중복 판례 6건 삭제 (18개 → 12개)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ Supabase Storage 동기화</strong> — 로컬 삭제 파일 Storage에서도 삭제, API 반환값 일치 확인</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ 더보기 + 페이지네이션 하이브리드</strong> — `/api/card-news/list`에 `page`, `limit` 파라미터 추가, 클라이언트 6개 단위 로딩</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ 메인 페이지 스크롤 앵커 수정</strong> — "목록으로" 버튼 `Link` 컴포넌트로 변경, `/#archive` 해시 감지 및 스크롤 로직</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ llms.txt 및 llm-cite API 생성</strong> — 루트 `llms.txt` + `/api/llm-cite` 엔드포인트 (검색어 기반 출처 인용)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ SEO 점수 뱃지 UI</strong> — 아카이브 카드 우측 상단 색상별 표시 (🟢 80+ / 🟡 60+ / 🔥 60-)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ 웹사이트 SEO 점수 계산 로직 보강</strong> — 제목·콘텐츠품질·구조화데이터·신뢰도·모바일 5항목 평가 추가</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ 통합 SEO 점수 산정</strong> — YouTube 30% + Instagram 30% + Website 40% 가중치 적용</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ 12개 콘텐츠 SEO 데이터 재생성</strong> — 전부 Supabase 업로드 완료</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ SEO 모니터 API (`/api/seo-monitor/data`)</strong> — `?type=light` 요약 통계, `?type=full` 상세 데이터 제공</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ SEO 대시보드 최초 구현</strong> — `/dashboard/seo` 페이지: 실시간 현황, 엔진별 분석, 개선 제안, 모니터 탭</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ SEO 모니터 수집 (2회)</strong> — 10:18 / 18:01 실행, 30개 키워드, 296건 수집 (Google 100, Naver 100, YouTube 96)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ SEO 모니터 일간 분석 (19:00)</strong> — 통계 산출, 분석 데이터 GitHub push (`b1a40da`)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ SEO 최적화 자동 적용 (21:00)</strong> — 6개 최적화 모두 이미 적용 완료 확인, 14개 검증 항목 통과</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>✅ 월드 뉴스 수집</strong> — `world_news_20260715.md` 생성 (10,138자)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>Local-First 파이프라인 안정화: 로컬 중심 상용화 파이프라인 작업. 가격 섹션 제거, 아카이브 UX 개선, LLM 인용 API 완성</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-columns"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>SEO 대시보드 구축: 실시간 콘텐츠 SEO 점수 현황 + 엔진별 분석 + 모니터 데이터 통합 대시보드 1차 완성</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>SEO 모니터링: 30개 법률 키워드 일 2회 모니터링 정상 가동. 오후 실행 Tavily API rate limit (432) 발생</strong> — 세무/교통 10개 키워드 누락</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-07-15</h3>
+										<p><strong>Vercel 배포: Hobby Plan 배포 한도 초과로 `llm-cite` API 수동 Redeploy 대기 중</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-code"></span>
 										<h3>2026-07-14</h3>
 										<p><strong>✅ Legal Match Agent 채널 API 실행기 시스템 구현 완료 (7개 채널: 네이버 블로그, 유튜브, 인스타그램, 카카오톡, 보도자료, 웹사이트 FAQ, LLM 인용)</strong></p>
@@ -3710,7 +3836,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-07-08: 7 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-07-15: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-07-15: 21 activities"></div>
 
 										</div>
 
@@ -3741,12 +3867,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-07-09: 12 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-07-16: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">금</div>
-
-											<div class="heatmap-cell level-0" title="2026-04-17: 0 activities"></div>
 
 											<div class="heatmap-cell level-0" title="2026-04-24: 0 activities"></div>
 
@@ -3843,12 +3969,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">666</div>
+										<div class="value">687</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">62</div>
+										<div class="value">63</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -3867,17 +3993,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">232</span></span>
+									<span class="category-tag">기타<span class="count">244</span></span>
 
-									<span class="category-tag">연구<span class="count">153</span></span>
+									<span class="category-tag">연구<span class="count">155</span></span>
 
-									<span class="category-tag">자동화<span class="count">66</span></span>
+									<span class="category-tag">자동화<span class="count">67</span></span>
 
-									<span class="category-tag">운영<span class="count">47</span></span>
+									<span class="category-tag">운영<span class="count">49</span></span>
 
-									<span class="category-tag">개발<span class="count">24</span></span>
+									<span class="category-tag">개발<span class="count">25</span></span>
 
-									<span class="category-tag">설계<span class="count">7</span></span>
+									<span class="category-tag">설계<span class="count">10</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -3971,25 +4097,13 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>seo-monitor-search</h3>
-										<p>매일 10,18:00 KST<br/>Job ID: <code>9df6e46916f2</code><br/>상태: <span style="color:red">❌ error</span></p>
+										<p>매일 10,18:00 KST<br/>Job ID: <code>9df6e46916f2</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>seo-monitor-analyze</h3>
 										<p>매일 19:00 KST<br/>Job ID: <code>7b0e92e83d41</code><br/>상태: <span style="color:green">✅ ok</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>seo-optimizer-daily</h3>
-										<p>매일 21:00 KST<br/>Job ID: <code>4e5aae08821b</code><br/>상태: <span style="color:green">✅ ok</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>seo-optimizer-auto-apply</h3>
-										<p>매일 21:30 KST<br/>Job ID: <code>e83641641e4f</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -4008,6 +4122,24 @@ section h2 {
 										<span class="icon solid fa-bell"></span>
 										<h3>card-news-supabase-sync</h3>
 										<p>every 2m<br/>Job ID: <code>6f274e9d3497</code><br/>상태: <span style="color:green">✅ ok</span></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>seo-context-daily</h3>
+										<p>매일 19:05 KST<br/>Job ID: <code>dd5aff68bfa5</code><br/>상태: <span style="color:green">✅ ok</span></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>seo-optimizer-daily</h3>
+										<p>매일 21:00 KST<br/>Job ID: <code>6d1fe97c137b</code><br/>상태: <span style="color:green">✅ ok</span></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>card-news-evening-push</h3>
+										<p>매일 22:00 KST<br/>Job ID: <code>0a0bc84fc8d8</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 								</div>
@@ -4049,6 +4181,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-07-15 06:05 KST -->
+	<!-- Last updated: 2026-07-16 06:02 KST -->
 	</body>
 </html>
