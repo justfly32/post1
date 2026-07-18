@@ -424,6 +424,186 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>개인 사이트 업데이트 (579 activities, 28 cron jobs) → GitHub Pages 배포</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-utensils"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>SEO 모니터 Run #0 (오전): 이혼·부동산·형사 카테고리 15개 키워드 검색 (225개 결과 수집)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-utensils"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>SEO 모니터 Run #1 (오후): 상속·세금·교통 카테고리 15개 키워드 검색 (218개 결과 수집)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>SEO 모니터 일간 분석: 총 443개 결과, 2회 실행, trends.json 업데이트</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>SEO 데이터 GitHub push 완료</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX HWP 인코딩 문제 (utf-16le→cp949→euc-kr 순차 fallback)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX SEO 점수 미표시 (`sync-card-news.sh:42` 조건 검증 추가)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>REGENERATE 깨진 SEO 파일 2건 (d4rjcf-mrqa0sjd, d4rjcf-vh0wqo9b)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX Invalid key 에러 (`filenameToSlug.ts` 한글→ASCII 변환)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>REMOVE "텍스트 추출하기" 버튼 (파일 선택 시 자동 업로드)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>REMOVE "빠른 생성" 버튼 (파일 모드에서 제거)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX 파일 모드 파이프라인 단절 (request-analysis 생략 → pending.json 유지)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX 텍스트 모드 request-analysis 복원</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>DIAGNOSE 콘텐츠 검수 기존 인프라 (fetch-pending-content.py + watch-regen.sh)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>IMPLEMENT 콘텐츠 검수 workflow (review/submit/route.ts, preview/review/upload 페이지)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>메뉴 구조 개편: 자료 관리 / 콘텐츠 검수 / 발행 관리 (3개 메뉴 단순화)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>발행 관리 + 발행 이력 통합 (하나의 페이지 탭 구조, 네비게이션 11→9)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>작성 화면 → 오버레이 모달 변경</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>권한 체계 문서 생성 (PROJECT_PERMISSION.md)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX 승인 상태 불일치 (approve→approved 변환, 기존 1건 마이그레이션)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-columns"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>IMPLEMENT 자동 발행 시스템 (publish-processor.ts, publish-status API, 프론트엔드 폴링 UI)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX Vercel 조기 종료 #1 (processPublish await 추가)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX Vercel 조기 종료 #2 (triggerPublish await 추가)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX 동적 import 실패 (publish-processor 정적 import)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>FIX Race condition (채널 순차 처리, 메모리 수집 후 1회 업로드)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>ARCHITECTURE CHANGE: Vercel 10초 제한 극복 → review-action에서 트래커만 생성, 프론트엔드 개별 채널 API 호출</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>발행 관리 페이지 아코디언 UI 구현 (상태별 접기/펼치기)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>MI8 콘텐츠 검수·자동 발행 파이프라인 구축 (전일 대규모 리팩토링)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>SEO 모니터 2회 실행 (일간 443개 결과 수집 분석)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-07-18</h3>
+										<p><strong>개인 사이트 일일 업데이트 및 배포</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-file-invoice"></span>
 										<h3>2026-07-17</h3>
 										<p><strong>Synap 프로젝트 정의서 및 아키텍처 문서 작성</strong> — 탈중앙 개인 에이전트 네트워크 프로젝트. SYNAP.md + ARCHITECTURE.md 생성 → GitHub push 완료</p>
@@ -3906,8 +4086,6 @@ section h2 {
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">월</div>
 
-											<div class="heatmap-cell level-0" title="2026-04-20: 0 activities"></div>
-
 											<div class="heatmap-cell level-0" title="2026-04-27: 0 activities"></div>
 
 											<div class="heatmap-cell level-0" title="2026-05-04: 0 activities"></div>
@@ -4085,7 +4263,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-07-11: 15 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-07-18: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-07-18: 30 activities"></div>
 
 										</div>
 
@@ -4116,6 +4294,8 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-07-12: 9 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-07-19: 0 activities"></div>
+
 										</div>
 
 									</div>
@@ -4125,22 +4305,22 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">713</div>
+										<div class="value">743</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">65</div>
+										<div class="value">66</div>
 										<div class="label">활동 일수</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">1.8</div>
+										<div class="value">1.9</div>
 										<div class="label">일 평균</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">2026-05-27 (25)</div>
+										<div class="value">2026-07-18 (30)</div>
 										<div class="label">최다 활동일</div>
 									</div>
 
@@ -4149,17 +4329,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">257</span></span>
+									<span class="category-tag">기타<span class="count">267</span></span>
 
-									<span class="category-tag">연구<span class="count">158</span></span>
+									<span class="category-tag">연구<span class="count">160</span></span>
 
 									<span class="category-tag">자동화<span class="count">71</span></span>
 
-									<span class="category-tag">운영<span class="count">51</span></span>
+									<span class="category-tag">운영<span class="count">54</span></span>
 
-									<span class="category-tag">개발<span class="count">28</span></span>
+									<span class="category-tag">개발<span class="count">40</span></span>
 
-									<span class="category-tag">설계<span class="count">11</span></span>
+									<span class="category-tag">설계<span class="count">14</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -4343,7 +4523,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>로또-당첨-확인</h3>
-										<p>매일 22:00 KST<br/>Job ID: <code>2fae92c934e1</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+										<p>매일 22:00 KST<br/>Job ID: <code>2fae92c934e1</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 								</div>
@@ -4385,6 +4565,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-07-18 06:03 KST -->
+	<!-- Last updated: 2026-07-19 06:00 KST -->
 	</body>
 </html>
