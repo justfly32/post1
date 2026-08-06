@@ -424,6 +424,60 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-08-06</h3>
+										<p><strong>개인 사이트 업데이트 (06:00)</strong> — activities 814개·cron jobs 33개 반영, commit `16e8913` push 완료, GitHub Pages 갱신 (https://justfly32.github.io/post1)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-08-06</h3>
+										<p><strong>세계 뉴스 리포트 (06:00)</strong> — 8개 지역(미국/중국/일본/유럽/러시아/브라질/중동/베트남) × 5건 = 40건 수집, `world_news_20260806.md` 저장. 주요 토픽: 호르무즈 해협 재개방 협상, 미중 무역 갈등 재격화, 엔화 미·일 공동 개입, 세우타 난민 위기</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-08-06</h3>
+										<p><strong>네이버 블로그 서버 중복 발행 방지 (저녁, 텔레그램)</strong> — `naver-blog-server.py`에 slug별 in-flight 락(`PUBLISH_LOCKS`) 적용: 같은 slug 동시 요청 직렬화, 첫 요청만 발행 후 tracker의 기존 URL 반환. py_compile 통과, 서버 재시작(PID 58958) + health OK, 동시 3건 요청 테스트로 전건 동일 URL 반환 검증</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-08-06</h3>
+										<p><strong>SEO 모니터 일간 분석 (19:00)</strong> — 10:00 `seo-monitor-search` 크론이 `Broken pipe`로 실패(수집 0건) → 분석 단계에서 백필 수집: 45건 검색(15키워드 × 3엔진) · 225건 수집(구글 상세 75), `run-19-15.json` + `analysis/latest.json` 갱신. 네이버 블로그 계열 노출 상승(m.blog.naver.com 57, blog.naver.com 19)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-06</h3>
+										<p><strong>네이버 세션 keepalive (19:07, 23:04 등)</strong> — refresh-session HTTP 200 정상</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-08-06</h3>
+										<p><strong>SEO 최적화 자동 반영 (21:00, seo-optimizer-daily)</strong> — opt-038/039/040 반영: google-engine.ts E-E-A-T 신호 3종(상속재산분할/세무조사 대응/뺑소니·도주치상) +10, card-news-seo.ts 키워드 확장(상속 재산 분할/뺑소니 처벌 등). 검증: tsc 0 errors, legal-match transpile OK, 런타임 harness 18/18 ALL PASS, repo mirror 3개 파일 IDENTICAL</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-08-06</h3>
+										<p><strong>로또 월간 분석 크론 (22:00)</strong> — 8/6은 말일 아님 → 가드로 [SILENT] 정상 종료</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-columns"></span>
+										<h3>2026-08-06</h3>
+										<p><strong>텔레그램</strong> — 카드뉴스 큰 글자 제목 짤림 문의 (저녁): 로컬 표지/카드 이미지는 모두 정상 확인, 짤림 발생 위치(대시보드 미리보기 vs 블로그 본문) 사용자 확인 대기</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-columns"></span>
+										<h3>2026-08-06</h3>
+										<p><strong>텔레그램</strong> — 네이버 중복 발행 사고 원인 분석: 발행 대시보드에서 같은 slug가 동시 다발로 요청되어 중복 글 3개 생성됨 → in-flight 락으로 해결</p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-rocket"></span>
 										<h3>2026-08-05</h3>
 										<p><strong>데일리 기술 뉴스 브리핑 (08:00)</strong> — GeekNews 5 + Hacker News 5 총 10건 (후보 30건 선별), HTML 리포트 13KB, 이메일 발송(suchl@sk.com, Message ID 19fcf075af421311) + Slack 홈 채널 전달. 주요 토픽: 크래프톤 21B 한영 음성AI, 카카오 '카나나-2' 경량 모델 4종, 미스트랄 Shieldstral(3B 안전 분류기), DeepSeek V4 Flash 단일 MI300X 서빙(168.6 tok/s), npm 공급망 웜 'Shai-Hulud'(keyv 계열 434개 패키지, 월 20억+ 설치), Xbox 장애로 디스크 게임 소유권 논쟁, Apple↔OpenAI 영업비밀 소송</p>
@@ -5433,7 +5487,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-07-30: 9 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-08-06: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-08-06: 9 activities"></div>
 
 										</div>
 
@@ -5464,12 +5518,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-07-31: 14 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-08-07: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">토</div>
-
-											<div class="heatmap-cell level-0" title="2026-05-09: 0 activities"></div>
 
 											<div class="heatmap-cell level-3" title="2026-05-16: 6 activities"></div>
 
@@ -5535,12 +5589,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">951</div>
+										<div class="value">960</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">84</div>
+										<div class="value">85</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -5559,9 +5613,9 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">359</span></span>
+									<span class="category-tag">기타<span class="count">363</span></span>
 
-									<span class="category-tag">연구<span class="count">230</span></span>
+									<span class="category-tag">연구<span class="count">235</span></span>
 
 									<span class="category-tag">자동화<span class="count">86</span></span>
 
@@ -5657,13 +5711,13 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>telecom-3sa-daily-news</h3>
-										<p>매일 09:00 KST<br/>Job ID: <code>d835badc5fdc</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 09:00 KST<br/>Job ID: <code>d835badc5fdc</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>seo-monitor-search</h3>
-										<p>매일 10:00 KST<br/>Job ID: <code>9df6e46916f2</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 10:00 KST<br/>Job ID: <code>9df6e46916f2</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -5825,6 +5879,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-08-06 06:07 KST -->
+	<!-- Last updated: 2026-08-07 06:03 KST -->
 	</body>
 </html>
