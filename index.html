@@ -424,6 +424,48 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-08-11</h3>
+										<p><strong>카드뉴스 발행 파이프라인 정상 가동</strong> — MI8_project Y_folder/card-news/md/ 에 법률 카드뉴스 마크다운 50개 생성 (lawks-co-kr, lawtimes-co-kr, ablelaw-kr 등 법률 뉴스/성공사례 소스 기반), .published_slugs.txt 갱신</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-11</h3>
+										<p><strong>개인 사이트 업데이트 (06:04)</strong> — post1 커밋 `51c314b` "Update personal site 2026-08-11"</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-08-11</h3>
+										<p><strong>세계 뉴스 리포트 (06:00)</strong> — `world_news_20260811.md` 저장</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-08-11</h3>
+										<p><strong>LLM Wiki daily sync (05:32)</strong> — wiki auto-backup 커밋 `da3a74a` (4개 파일), 크론 에러 10건 분석</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-08-11</h3>
+										<p><strong>naver-session-hourly-keepalive (22:04)</strong> — 네이버 블로그 발행 서버(port 5002) 세션 갱신 성공 (HTTP 200)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-08-11</h3>
+										<p><strong>~/.hermes 크론 산출물 갱신</strong> — 크론 출력/설정 파일 19개 변경</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-08-11</h3>
+										<p><strong>크론 에러 분석 (총 10건, 6개 job): naver-session-hourly-keepalive 5건 (empty stream 3 / Broken pipe 2</strong> — 3일 연속 최다 에러 job), 오전 09:08~10:10 Broken pipe 6건 집중 (weekly-security-monitor, seo-weekly-report, telecom-3sa-daily-news, seo-monitor-search, keepalive — 공통 인프라 일시 장애 추정), llm-wiki-daily-sync 1건은 오탐 (본문 텍스트 매칭)</p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-check-circle"></span>
 										<h3>2026-08-10</h3>
 										<p><strong>seo-monitor-search 크론 재시도 규칙 적용</strong> — 45회 web_search의 Broken pipe 실패(최근 12회 중 7회, 58%) 대응: 개별 3초 재시도 + error 필드 기록 후 계속 + 전체 5분/20분 재시도. 프롬프트 반영·수동 실행 검증 완료</p>
@@ -5599,7 +5641,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-04: 7 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-08-11: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-08-11: 7 activities"></div>
 
 										</div>
 
@@ -5630,12 +5672,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-05: 9 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-08-12: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">목</div>
-
-											<div class="heatmap-cell level-2" title="2026-05-14: 3 activities"></div>
 
 											<div class="heatmap-cell level-3" title="2026-05-21: 4 activities"></div>
 
@@ -5763,12 +5805,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">989</div>
+										<div class="value">996</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">88</div>
+										<div class="value">89</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -5787,11 +5829,11 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">375</span></span>
+									<span class="category-tag">기타<span class="count">378</span></span>
 
-									<span class="category-tag">연구<span class="count">244</span></span>
+									<span class="category-tag">연구<span class="count">247</span></span>
 
-									<span class="category-tag">자동화<span class="count">89</span></span>
+									<span class="category-tag">자동화<span class="count">90</span></span>
 
 									<span class="category-tag">운영<span class="count">64</span></span>
 
@@ -5891,7 +5933,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>seo-monitor-search</h3>
-										<p>매일 10:00 KST<br/>Job ID: <code>9df6e46916f2</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 10:00 KST<br/>Job ID: <code>9df6e46916f2</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -6035,6 +6077,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-08-11 06:03 KST -->
+	<!-- Last updated: 2026-08-12 06:08 KST -->
 	</body>
 </html>
