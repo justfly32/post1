@@ -425,6 +425,90 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-database"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>LLM Wiki daily sync (05:32)</strong> — FTS 인덱스 +12/+58 (총 11,147개 파일, FTS 10,907), 레지스트리 29개 폴더 (신규 없음), 크론 에러 8건 분석, 작업 변경 76개 감지, git 백업 완료</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>개인 사이트 업데이트 (06:03)</strong> — post1 커밋 `3911341` "Update personal site 2026-08-13", Activities 880개 · Cron jobs 30개, push 완료</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>Wiki Git Backup (06:09)</strong> — 변경 없음 (05:32 백업 이미 완료). 참고: 지정 SSH 키 `~/.ssh/id_ed25519_meituan` 없음 → 기본 키(id_ed25519)로 인증 정상</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>기술 뉴스 브리핑 (08:13)</strong> — Geek News 5 + Hacker News 5 = 10건, `tech_news_briefing_20260813.html` 생성, suchl@sk.com 이메일 발송 성공 (Gmail SENT 확인). 토픽: DeepSeek V4 Pro 0813 GA, Qwen3.8-2.4T 공개, Tailscale SQLite 16년 버그 사냥</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>네이버 세션 keepalive</strong> — 15:10·22:05·23:05 성공 (HTTP 200). 단 일부 시간대 실패 4건 (아래 주요 작업 참조)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>주식 시장 분석 (16:17)</strong> — 코스피 **6,813.34 (+3.56%, 4거래일 연속 상승, 장중 6,895.63)**, 코스닥 861.37 (+0.29%), 원/달러 1,419.4원, 외국인 +1조6,525억 (장중), 美 7월 CPI 3.4% 부합. 특징주: 삼성전기 +12.58% (MLCC 톱픽), SK하이닉스 +5.92%, SK스퀘어 +10.5%. HTML → Google Drive + Notion 등록 + 이메일(suchl@sk.com) 발송 완료</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>SEO 모니터 분석 (19:34)</strong> — 실패 보고: `daily/2026-08-13/` 수집 데이터 없음 (seo-monitor-search 10:00 실패 여파), `analysis/latest.json`은 08-12 데이터 유지</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>seo-optimizer-daily (21:21)</strong> — 검증만 수행, 실제 변경 없음 (pending 29개 전부 applied, dev↔mirror IDENTICAL)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>카드뉴스 발행 파이프라인</strong> — Y_folder/card-news/md/ 법률 카드뉴스 md 61개 생성/갱신 (lawks, lawtimes, ablelaw 소스) — **3일 연속 정상 가동** (전일 50 → 61개)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>크론 에러 8건 (오탐 1 제외 실질 7건, 5개 job): naver-session-hourly-keepalive 4건 (Broken pipe 2 / empty stream 2, 09:09·10:08·21:06·01:10)</strong> — **5일 연속 반복 실패**, seo-optimizer-daily 1건 (21:09, 신규 출현), seo-monitor-search 1건 (10:09), telecom-3sa-daily-news 1건 (09:09), llm-wiki-daily-sync 1건 (오탐, 3일 연속)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>오전 09:09~10:09 Broken pipe 3건 집중 3일 연속 동일 창 재현 (keepalive·telecom-3sa·seo-monitor-search)</strong> — 주기성 인프라 장애 패턴 확정 수준 → 크론 시각 시프트 실행 단계 검토</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>저녁 21:06~21:09 (keepalive + seo-optimizer-daily) 신규 장애 창 관찰</strong> — 추가 관찰 필요</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>seo-monitor-search (10:00) 실패로 08-13 수집 데이터 미생성 → 분석 스킵</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-08-13</h3>
+										<p><strong>Wiki Git Backup 스크립트의 SSH fallback 키 경로가 실제 파일과 불일치 (id_ed25519_meituan → 없음)</strong> — 정리 권장</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
 										<h3>2026-08-12</h3>
 										<p><strong>LLM Wiki daily sync (05:32)</strong> — FTS 인덱스 11,135개 파일 (전일 대비 +7), 레지스트리 29개 폴더, 크론 에러 8건 분석, git 백업 완료</p>
 									</section>
@@ -5829,7 +5913,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-06: 9 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-08-13: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-08-13: 14 activities"></div>
 
 										</div>
 
@@ -5860,12 +5944,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-07: 9 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-08-14: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">토</div>
-
-											<div class="heatmap-cell level-3" title="2026-05-16: 6 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-05-23: 8 activities"></div>
 
@@ -5931,12 +6015,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1017</div>
+										<div class="value">1031</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">91</div>
+										<div class="value">92</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -5955,15 +6039,15 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">387</span></span>
+									<span class="category-tag">기타<span class="count">392</span></span>
 
-									<span class="category-tag">연구<span class="count">255</span></span>
+									<span class="category-tag">연구<span class="count">259</span></span>
 
-									<span class="category-tag">자동화<span class="count">92</span></span>
+									<span class="category-tag">자동화<span class="count">95</span></span>
 
 									<span class="category-tag">운영<span class="count">64</span></span>
 
-									<span class="category-tag">개발<span class="count">59</span></span>
+									<span class="category-tag">개발<span class="count">61</span></span>
 
 									<span class="category-tag">설계<span class="count">20</span></span>
 
@@ -6095,7 +6179,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>seo-optimizer-daily</h3>
-										<p>매일 21:00 KST<br/>Job ID: <code>6d1fe97c137b</code><br/>상태: <span style="color:red">❌ error</span></p>
+										<p>매일 21:00 KST<br/>Job ID: <code>6d1fe97c137b</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -6203,6 +6287,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-08-13 06:03 KST -->
+	<!-- Last updated: 2026-08-14 06:03 KST -->
 	</body>
 </html>
