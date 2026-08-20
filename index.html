@@ -424,6 +424,102 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>자동매매 아침 브리핑 상태 오염 버그 진단·수정</strong> — 08:30 브리핑이 `run_live.py --dry-run --force`로 `last_run_date`를 공유 상태파일에 기록, 10:00/14:00 장중 알파가 "이미 오늘 실행함"으로 스킵되던 문제. 브리핑을 읽기전용(스냅샷 + 예측만)으로 고치고, 상태파일 8/19로 롤백 (커밋 1e0ad81, a152994)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>`--no-save` 플래그 추가</strong> — 상태 저장 없는 분석/예측 실행 지원 (커밋 7bbc3e3). dry-run이 상태를 오염시키던 근본 원인 해결</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>SK하이닉스(000660) 매수 차단 구현</strong> — `universe.no_trade: ["000660"]` 설정, 시그널·관찰은 유지하고 매수만 하드스톱 (커밋 a33448d). 예수금 부족으로 체결 실패하는 문제 방지</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>시간외 주문 유형 실측 규명 + 버그 수정</strong> — `71`(장후 종가, 16:00 종료·가격 불가), `81`(시간외 단일가, 16:00~18:00·가격 필요) 규칙 확정. broker `_order()` 가격 포함 로직 버그 수정, `order_type_afterhours: "81"`로 변경 (커밋 8a2f7e3, 0e98f19)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>코어 리밸런스 bull_hold 적용</strong> — "상승장에서는 팔지 않는다" 원칙을 코어 매도 방향에도 적용 (`_in_hold()` 게이트), 사용자 옵션2(원칙대로) 선택</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>16:30 이후 시간외 코어 실행</strong> — 상태 오염으로 스킵 → 상태 롤백 후 강제 재실행 → **금(411060) 8주 실전 매수 주문 접수 성공** (단일가 체결 대기). 사용자가 검증용 069500 1주 주문은 직접 취소</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>오늘 장중 매수는 보류 결정</strong> — dry-run 검증만 수행 (3매수 플랜 중 예수금 235만원 부족으로 SK하이닉스만 체결 실패 확인)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>데일리 주식 분석 크론 (16:00)</strong> — 코스피 6,852.58 (+5.89%), 코스닥 840.89 (+1.99%). SK하이닉스 40조 자사주 소각 발표로 반도체 급등·매수 사이드카. HTML 리포트 + 구글드라이브 + 노션 + 이메일 발송 완료</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>SEO 모니터 일간 분석 (19:00)</strong> — 3카테고리(이혼/부동산/형사)×3엔진 45검색·224건 수집, 자사 대륜 계열 노출 확인</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>daily-geek-hacker-news 크론 수정</strong> — 전달 대상(슬랙→텔레그램) 변경, 링크 명시 요구사항 추가 (8/21 08:00부터 적용)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>telecom-3sa-daily-news 변경</strong> — 매일 09:00 → 월·수·금 08:30으로 조정</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>개인 사이트(justfly32/post1) 업데이트 (06:00)</strong> — 945 activities, 39 crons, push 완료</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>llm-wiki 일일 동기화 (05:30)</strong> — 인덱스 갱신 55건, 레지스트리 32개 폴더, 크론 에러 0건</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>네이버 세션 hourly keepalive 크론 다수 회차 정상 수행</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>자동매매 시간외 미체결 처리 로직 설계 논의</strong> — 실전 체결을 위한 근본 문제(시간외 단일가 예상체결가 교차 여부)와 옵션(A 한계가격 여유지정 / B 종가 / C 장중 시장가) 비교 제시, 사용자 결정 대기</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-08-20</h3>
+										<p><strong>금 8주 주문 18:00까지 10분 주기 단일가 체결 여부 모니터링 (16:47 시점 미체결)</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-check-circle"></span>
 										<h3>2026-08-19</h3>
 										<p><strong>네이버 블로그 발행 서버(port 5002) 세션 keepalive 크론 정상 수행 (21:00, 22:00, 23:00 등 다수 회차, 전부 성공)</strong></p>
@@ -6219,7 +6315,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-13: 14 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-08-20: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-08-20: 16 activities"></div>
 
 										</div>
 
@@ -6250,12 +6346,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-14: 8 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-08-21: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">토</div>
-
-											<div class="heatmap-cell level-4" title="2026-05-23: 8 activities"></div>
 
 											<div class="heatmap-cell level-0" title="2026-05-30: 0 activities"></div>
 
@@ -6321,12 +6417,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1098</div>
+										<div class="value">1114</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">98</div>
+										<div class="value">99</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -6345,17 +6441,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">409</span></span>
+									<span class="category-tag">기타<span class="count">415</span></span>
 
-									<span class="category-tag">연구<span class="count">268</span></span>
+									<span class="category-tag">연구<span class="count">271</span></span>
 
-									<span class="category-tag">자동화<span class="count">112</span></span>
+									<span class="category-tag">자동화<span class="count">115</span></span>
+
+									<span class="category-tag">개발<span class="count">68</span></span>
 
 									<span class="category-tag">운영<span class="count">67</span></span>
 
-									<span class="category-tag">개발<span class="count">65</span></span>
-
-									<span class="category-tag">설계<span class="count">21</span></span>
+									<span class="category-tag">설계<span class="count">22</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -6443,7 +6539,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>telecom-3sa-daily-news</h3>
-										<p>매일 09:00 KST<br/>Job ID: <code>d835badc5fdc</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 08:30 KST<br/>Job ID: <code>d835badc5fdc</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -6491,7 +6587,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>로또-주간-예측-알림</h3>
-										<p>매일 17:00 KST<br/>Job ID: <code>e381c982a349</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 20:00 KST<br/>Job ID: <code>e381c982a349</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -6563,7 +6659,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-live-daily</h3>
-										<p>매일 15:45 KST<br/>Job ID: <code>589cce0adb95</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 14:15 KST<br/>Job ID: <code>589cce0adb95</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -6575,37 +6671,43 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-intraday-alpha-am</h3>
-										<p>매일 10:00 KST<br/>Job ID: <code>9d5ec6d142e9</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+										<p>매일 10:00 KST<br/>Job ID: <code>9d5ec6d142e9</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-intraday-alpha-pm</h3>
-										<p>매일 14:00 KST<br/>Job ID: <code>a9754dc1e9df</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>auto-trading-afterhours-fill-test</h3>
-										<p>once at 2026-08-20 16:05<br/>Job ID: <code>9dfb794d0770</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+										<p>매일 14:00 KST<br/>Job ID: <code>a9754dc1e9df</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-morning-briefing</h3>
-										<p>매일 08:30 KST<br/>Job ID: <code>82cb11d1c019</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+										<p>매일 08:30 KST<br/>Job ID: <code>82cb11d1c019</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-evening-briefing</h3>
-										<p>매일 16:00 KST<br/>Job ID: <code>e4e03ad24a3b</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+										<p>매일 16:00 KST<br/>Job ID: <code>e4e03ad24a3b</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>memory-git-backup</h3>
 										<p>매일 01:00 KST<br/>Job ID: <code>a7b46fa6a5ae</code><br/>상태: <span style="color:green">✅ ok</span></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>주간-주식매매-진행경과-및-전망</h3>
+										<p>매일 17:00 KST<br/>Job ID: <code>2728d2058601</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>주간-주식시장-분석-및-전망</h3>
+										<p>매일 17:00 KST<br/>Job ID: <code>3c29cdea62d6</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
 									</section>
 
 								</div>
@@ -6647,6 +6749,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-08-20 06:00 KST -->
+	<!-- Last updated: 2026-08-21 06:00 KST -->
 	</body>
 </html>
