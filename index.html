@@ -424,6 +424,66 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>auto-trading: 실주문 크론 상호 스킵 문제 해결 (커밋 e3cce6b)</strong> — `engine/live.py`의 `last_run_date` 단일값을 `last_run` 슬롯 dict(`daily`/`afterhours`/`intraday_am`/`intraday_pm`)로 전환. 같은 날 다른 슬롯끼리는 스킵하지 않도록 수정. `run_live.py`에 `--slot` 파라미터 추가. 크론 스크립트를 `intraday_alpha_am.sh`/`intraday_alpha_pm.sh`로 분리. 저녁 브리핑 dry-run에 `--no-save` 명시. ops-runbook §10 문서화.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>auto-trading 실매매 최초 정상 체결</strong> — 16:30 장후 크론이 새 코드로 실주문 성공 (411060 금 8주 @ 27,435 매수, 코어 리밸런스). 이전엔 "이미 실행함→스킵"으로 죽었던 문제가 해소된 첫 날.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>SEO 모니터 일간 분석 (19:01 cron)</strong> — 15개 키워드 × 3엔진 = 45회 검색, 225건 결과 수집. 상속/세무/교통 카테고리 균등. 분석 스크립트를 `searches` 배열 구조에 맞게 적응형 보정.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>SEO 자동 최적화 파이프라인 (21:02 cron)</strong> — no-op. pending.json 29개 모두 applied, 신규 제안 0건, 코드 패치 0건. verify-code-reflection ALL PASS.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>카드뉴스 발행 파이프라인</strong> — MI8_project에 74개 파일 변경 (05:28~05:29): `.published_slugs.txt` 슬러그 이력 + `md/` 카드뉴스 본문 대량 생성 (lawks/lawtimes/ablelaw 등 법률 뉴스 소스), seo.json 27개 갱신.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>네이버 블로그 세션 keepalive (23:00 cron)</strong> — port 5002 refresh-session 200 OK, 세션 갱신 성공.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>post1 개인사이트 업데이트 (커밋 5330cb7).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>auto-trading 실전 거래 파이프라인의 근본 버그(크론 상호 스킵) 수정 및 실매매 재가동</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>법률 SEO 모니터링·최적화 일상 파이프라인 실행</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-09-01</h3>
+										<p><strong>카드뉴스 발행 및 메모리 백업 (memory backup 커밋 c010173)</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-check-circle"></span>
 										<h3>2026-08-31</h3>
 										<p><strong>카드뉴스 SEO 배치 대량 회귀 작업 (MI8_project Y_folder 141개 변경)</strong> — `.seo.json` ~90개(08-30 21:03 일괄) + `md/` 본문 54개(05:27) 생성</p>
@@ -6811,7 +6871,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-25: 11 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-09-01: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-09-01: 10 activities"></div>
 
 										</div>
 
@@ -6842,12 +6902,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-26: 8 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-09-02: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">목</div>
-
-											<div class="heatmap-cell level-4" title="2026-06-04: 10 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-06-11: 8 activities"></div>
 
@@ -6975,17 +7035,17 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1207</div>
+										<div class="value">1217</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">110</div>
+										<div class="value">111</div>
 										<div class="label">활동 일수</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">2.7</div>
+										<div class="value">2.8</div>
 										<div class="label">일 평균</div>
 									</div>
 
@@ -6999,15 +7059,15 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">466</span></span>
+									<span class="category-tag">기타<span class="count">471</span></span>
 
 									<span class="category-tag">연구<span class="count">291</span></span>
 
-									<span class="category-tag">자동화<span class="count">133</span></span>
+									<span class="category-tag">자동화<span class="count">135</span></span>
+
+									<span class="category-tag">개발<span class="count">72</span></span>
 
 									<span class="category-tag">운영<span class="count">70</span></span>
-
-									<span class="category-tag">개발<span class="count">69</span></span>
 
 									<span class="category-tag">설계<span class="count">22</span></span>
 
@@ -7307,6 +7367,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-09-01 06:00 KST -->
+	<!-- Last updated: 2026-09-02 06:00 KST -->
 	</body>
 </html>
