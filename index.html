@@ -424,6 +424,48 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-09-02</h3>
+										<p><strong>Daily Stock Analysis (16:00 cron)</strong> — 미·이란 무력 충돌 격화로 코스피 -3.99% 급락(6,562.72, ▼273.08), 코스닥 -2.10%(803.98). 원/달러 1,368.60원·WTI 90.22달러(+5.2%). 개인 +2.30조/외국인 -1.91조/기관 -2.04조. HTML 리포트 생성 → 구글드라이브 업로드 → Notion 등록 → suchl@sk.com 이메일 발송 완료. 특징주: STX그린로지스·제이스로보틱스 상한가.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-02</h3>
+										<p><strong>네이버 부동산 자동 재시도 크론 등록 (마감)</strong> — 인천 검단구 원당동 상가(SG)·토지(TJ) 매물 수집용 크론(d0b0a3d69757)을 등록, 22:20 예약 실행. 22:20 실행 시 **여전히 HTTP 429 rate limit 지속**으로 수집 중단·상태만 보고 (추가 호출 없음).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-09-02</h3>
+										<p><strong>네이버 블로그 세션 keepalive (21:00/22:00/23:00 cron)</strong> — port 5002 refresh-session 모두 200 OK, 세션 갱신 성공.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-02</h3>
+										<p><strong>DeepSeek V4 Flash 벤치마크 평가 (Telegram 세션)</strong> — V4-Flash-0731 스펙·에이전트/일반 벤치마크 정리, 환각률 84%·장황함·LMArena 79위 등 약점 확인. 로또 크론·동행복권 자동구매 개선 논의.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-09-02</h3>
+										<p><strong>주식 시장 동향 일간 파이프라인 (코스피 급락 분석/리포트/발송)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-02</h3>
+										<p><strong>네이버 부동산 수집 시도</strong> — IP rate limit(429) 지속으로 시도 중단</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-02</h3>
+										<p><strong>네이버 발행 서버 세션 유지</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-code"></span>
 										<h3>2026-09-01</h3>
 										<p><strong>auto-trading: 실주문 크론 상호 스킵 문제 해결 (커밋 e3cce6b)</strong> — `engine/live.py`의 `last_run_date` 단일값을 `last_run` 슬롯 dict(`daily`/`afterhours`/`intraday_am`/`intraday_pm`)로 전환. 같은 날 다른 슬롯끼리는 스킵하지 않도록 수정. `run_live.py`에 `--slot` 파라미터 추가. 크론 스크립트를 `intraday_alpha_am.sh`/`intraday_alpha_pm.sh`로 분리. 저녁 브리핑 dry-run에 `--no-save` 명시. ops-runbook §10 문서화.</p>
@@ -6902,7 +6944,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-26: 8 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-09-02: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-09-02: 7 activities"></div>
 
 										</div>
 
@@ -6933,12 +6975,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-27: 10 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-09-03: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">금</div>
-
-											<div class="heatmap-cell level-4" title="2026-06-05: 7 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-06-12: 16 activities"></div>
 
@@ -7035,12 +7077,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1217</div>
+										<div class="value">1224</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">111</div>
+										<div class="value">112</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -7059,11 +7101,11 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">471</span></span>
+									<span class="category-tag">기타<span class="count">474</span></span>
 
-									<span class="category-tag">연구<span class="count">291</span></span>
+									<span class="category-tag">연구<span class="count">293</span></span>
 
-									<span class="category-tag">자동화<span class="count">135</span></span>
+									<span class="category-tag">자동화<span class="count">137</span></span>
 
 									<span class="category-tag">개발<span class="count">72</span></span>
 
@@ -7277,7 +7319,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-live-daily</h3>
-										<p>매일 14:15 KST<br/>Job ID: <code>589cce0adb95</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 14:15 KST<br/>Job ID: <code>589cce0adb95</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -7367,6 +7409,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-09-02 06:00 KST -->
+	<!-- Last updated: 2026-09-03 06:00 KST -->
 	</body>
 </html>
