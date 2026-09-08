@@ -424,6 +424,132 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>Hermes 게이트웨이 업데이트 (10:28~11:47, 텔레그램+Slack): v0.21.0(7b72fd) → v0.21.1(966637323) 적용, `x-opencode-session` 버그 수정 포함. launchd KeepAlive=true 설정(크래시 시 자동 재시작) 후 재시작 완료(PID 62621). daily-geek-hacker-news 크론 수동 실행으로 교체 검증</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>텔레그램 연결 진단 (11:41 Slack): 재시작 불필요 판정</strong> — 근본 원인은 api.telegram.org(149.154.166.110) 경로 간헐 flapping, heartbeat probe + 자동 reconnect watcher가 매번 복구(10:33 이후 Disconnected 없음). 10:52/10:56/11:25 warning은 경로 재탐색 노이즈</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>기술 뉴스 브리핑 (11:49): tech_news_briefing_20260908.html 생성</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>주식 시장 분석 (16:00): 코스피 6,954.52(-0.58%)</strong> — 장중 7,171까지 7000선 재탈환 후 막판 급반전 '안착 실패'. HTML → Google Drive + Notion + 이메일(suchl@sk.com) 발송 완료</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>자동매매 저녁 브리핑 (16:00): 장중알파 PM이 005930 3주 매수 체결, 총자산 5,089,064원/예수금 120.4만, 조정 1일째 노출 50%</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>SEO 모니터 (18~19시): 18:00 `seo-monitor-search`가 provider HTTP 400 비재시도 에러로 사망 → 19:00 `seo-monitor-analyze`가 수집(45회 web_search) 직접 재실행해 복구, run-19-30.json + 분석 생성 완료 (divorce·realestate·criminal 15키워드, 225개 수집)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>SEO 자동 최적화 (21:00): no-op</strong> — 09-05+09-08 30키워드 전부 COVERED 판정, 신규 opt 0건. 실반영 검증 ALL PASS</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>네이버 세션 처리 (16~21시): keepalive 크론 매시간 refresh 실패(세션 만료) 알림 반복 → 21:12 수동 로그인 시도 → 사용자 "잠시 중지"로 로그인 중단 + `naver-session-hourly-keepalive` 크론 paused, 5002 서버는 세션 만료 상태로 보류</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-chart-line"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>주식: 전일(+4.61% 급등) 차익실현으로 개인 3.03조 순매도 vs 외인/기관 순매수. 한전 +4.12%(전기요금 인상 기대)·전력/건설 순환매, 삼성전기 -5.78%. WTI 91.48(5일 연속↑), 환율 1,345.6원</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>자동매매: 005930 매수 직후 종가 기준 추세 이탈(MA60)로 매수 다음날 매도 계획 신호</strong> — 휩쏘(왕복) 가능성 주의**. 예수금 120만은 노출 확대 조건 충족 시에만 사용</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>SEO: YouTube(75)·네이버 블로그(69)가 SERP 지배. Google에선 easylaw/law.go.kr 등 공신력 채널 상위</strong> — E-E-A-T 신호가 순위 핵심 축 재확인</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-09-08</h3>
+										<p><strong>크론 에러: seo-monitor-search HTTP 400은 모델/프로바이더 레벨 오류로 추정, 다음 주기 자연 회복 가능성 높음</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-07</h3>
+										<p><strong>개인 사이트 업데이트 (06:00): Activities 1,103개 / Cron jobs 40개 통계 생성, 커밋 `53b7577`, GitHub push 완료 (justfly32.github.io/post1)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-09-07</h3>
+										<p><strong>위키 자동 백업 (06:00): 변경사항 없음 → 커밋·푸시 생략</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-09-07</h3>
+										<p><strong>세계 뉴스 수집 (06:00): world_news_20260907.md 저장</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-09-07</h3>
+										<p><strong>통신3사 뉴스 리포트 (08:30): SKT/KT/LGU+ 각 3건 총 9건 수집, HTML 리포트(`telecom_3sa_news_report_20260907.html`) 생성 → Google Drive 업로드 + suchl@sk.com 이메일 발송 완료 (Message ID: 1a07910987c4fb35)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-07</h3>
+										<p><strong>자동매매 아침 브리핑 (08:30): 시장 국면 조정 1일째(노출 50%), 총자산 5,015,869원/예수금 205.7만, dry-run 결과 매수·매도 계획 0건 (주문 미발생)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-09-07</h3>
+										<p><strong>주간 보안/컴플라이언스 모니터링 (09:00): 시스템 오류 20건(slack_bolt 재연결 실패 반복), 민감정보 패턴 파일 20건·.env 노출 23건 주의, SSH 키 이슈 1건. 리포트 Drive 업로드 완료</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-09-07</h3>
+										<p><strong>보안 리포트 상세: 로그인 실패 0건·의심 프로세스 0건으로 능동적 침해 징후 없음. 디스크 루트 15%·데이터 볼륨 67%. 검출된 민감 파일은 대부분 캐시/로그(.hermes/cache, .hermes_history)로 실질 자격증명 노출 여부는 개별 확인 필요</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-09-07</h3>
+										<p><strong>통신3사 뉴스 주제: AI 데이터센터 경쟁(AIDC·해저케이블·모듈러 DC), 정부 '모두의 AI'(SKT 수요형·KT 이음), KT 5G SA 슬라이싱, LGU+ 볼트업 전기차 충전 AI 장애탐지</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-columns"></span>
+										<h3>2026-09-07</h3>
+										<p><strong>자동매매: 조정 국면에서 시스템 포지션 유지, 노출 50% 상단보다 하단 리스크 관리에 무게</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-database"></span>
 										<h3>2026-09-06</h3>
 										<p><strong>네이버 SEO 주간 채점 (21:00): 51개 카드뉴스 4축 루브릭 채점 완료. 평균 86점 (최저 70 / 최고 92), 80점 이상 47개. `~/.hermes/seo-monitor/naver-scores.json` 저장, `.seo.json` 반영 및 Supabase 업로드 51/51 성공. 하위 개선 대상: test-balanced-01(70)·test-legal-doc(70)·lawtimes 뉴스(75)·test-vercel-direct(76)·regen-traffic(82). 제목 '교통사고' 2회 반복 6건은 키워드 스터핑 리스크로 제안 반영</strong></p>
@@ -7074,7 +7200,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-08-31: 10 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-09-07: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-09-07: 9 activities"></div>
 
 										</div>
 
@@ -7105,12 +7231,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-09-01: 10 activities"></div>
 
+											<div class="heatmap-cell level-4" title="2026-09-08: 12 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">수</div>
-
-											<div class="heatmap-cell level-4" title="2026-06-10: 9 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-06-17: 13 activities"></div>
 
@@ -7136,12 +7262,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-09-02: 7 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-09-09: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">목</div>
-
-											<div class="heatmap-cell level-4" title="2026-06-11: 8 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-06-18: 8 activities"></div>
 
@@ -7269,12 +7395,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1256</div>
+										<div class="value">1277</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">116</div>
+										<div class="value">118</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -7293,13 +7419,13 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">486</span></span>
+									<span class="category-tag">기타<span class="count">498</span></span>
 
-									<span class="category-tag">연구<span class="count">302</span></span>
+									<span class="category-tag">연구<span class="count">307</span></span>
 
-									<span class="category-tag">자동화<span class="count">145</span></span>
+									<span class="category-tag">자동화<span class="count">148</span></span>
 
-									<span class="category-tag">개발<span class="count">74</span></span>
+									<span class="category-tag">개발<span class="count">75</span></span>
 
 									<span class="category-tag">운영<span class="count">71</span></span>
 
@@ -7331,7 +7457,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>Update personal site timestamp and notify Telegram</h3>
-										<p>매일 06:00 KST<br/>Job ID: <code>15e77e7ffb49</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 06:00 KST<br/>Job ID: <code>15e77e7ffb49</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -7361,7 +7487,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>daily-geek-hacker-news</h3>
-										<p>매일 08:00 KST<br/>Job ID: <code>3d0b92cb1d6e</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 08:00 KST<br/>Job ID: <code>3d0b92cb1d6e</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -7385,7 +7511,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>Wiki Git Backup</h3>
-										<p>매일 06:00 KST<br/>Job ID: <code>8550251c6377</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 06:00 KST<br/>Job ID: <code>8550251c6377</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -7397,7 +7523,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>seo-monitor-search</h3>
-										<p>매일 18:00 KST<br/>Job ID: <code>9df6e46916f2</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 18:00 KST<br/>Job ID: <code>9df6e46916f2</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -7421,7 +7547,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>card-news-supabase-sync</h3>
-										<p>every 2m<br/>Job ID: <code>6f274e9d3497</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>every 2m<br/>Job ID: <code>6f274e9d3497</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -7458,12 +7584,6 @@ section h2 {
 										<span class="icon solid fa-bell"></span>
 										<h3>pipeline-watchdog</h3>
 										<p>매시 */10분<br/>Job ID: <code>eba216d6483b</code><br/>상태: <span style="color:green">✅ ok</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>naver-session-hourly-keepalive</h3>
-										<p>매시 00분<br/>Job ID: <code>760bbb53aa10</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -7535,7 +7655,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-morning-briefing</h3>
-										<p>매일 08:30 KST<br/>Job ID: <code>82cb11d1c019</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 08:30 KST<br/>Job ID: <code>82cb11d1c019</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -7601,6 +7721,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-09-07 06:00 KST -->
+	<!-- Last updated: 2026-09-09 06:01 KST -->
 	</body>
 </html>
