@@ -424,6 +424,42 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-09-18</h3>
+										<p><strong>자동매매 ma_rsi 실전 엔진 누락 버그 수정 (오전): engine/live.py에 ma_rsi 전략 로드 누락 발견</strong> — NAVER 보유가 로직이 아니라 버그였음 (시뮬레이터만 수정, 실전엔진 미반영). `863258c` 커밋으로 수정 + dry-run에서 NAVER 4주 매도 신호(종가 199,000 < MA60 207,312, 추세 이탈) 정상 발생 검증. `2d5d976` 커밋으로 엔진 이중 구조 주의사항을 docs/strategy.md에 기록 (전략 추가 시 simulator/live 양쪽 필수). Bear J 승인("그대로 진행해") 후 10:00 intraday-alpha-am 크론에서 NAVER 자동 매도 진행</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-09-18</h3>
+										<p><strong>주식 데일리 분석(16:06) 완료: 외국인 7거래일 만의 매수 전환 + AI 반도체 수요로 코스피 2.66% 급등, 6,890선 회복</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-09-18</h3>
+										<p><strong>세계 뉴스 브리핑(06:02) 완료: 8개 지역 40건 요약 저장 (world_news_20260918.md). 연준 금리 인상(9/16 FOMC 25bp, 3.75~4.00%), 이란 전쟁 종전 모멘텀, 유럽 방위통합 가속, 브라질 대선 접전, 남중국해 군사화 등</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-18</h3>
+										<p><strong>로또 주간 예측(금 20:01 크론) 실행: 주간 예측 5세트 생성 (lotto-predictor)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-09-18</h3>
+										<p><strong>자동매매 실전 엔진(engine/live.py)과 시뮬레이터의 전략 로드 불일치 버그 진단·수정 (9/16~9/18 개별주 신호 0건 방치의 근본 원인)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-09-18</h3>
+										<p><strong>주식·세계뉴스 데일리 리포트 생성·발송</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-cloud-upload-alt"></span>
 										<h3>2026-09-17</h3>
 										<p><strong>MI8_project 카드뉴스 파이프라인: 법률 카드뉴스 `md/` 52개 파일 대량 생성/갱신 (lawks·lawtimes·ablelaw 소스 + test-*·regen-* 포함, 05:27~05:30), `.published_slugs.txt` 발행 슬러그 인덱스 갱신</strong></p>
@@ -8098,7 +8134,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-09-11: 23 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-09-18: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-09-18: 11 activities"></div>
 
 										</div>
 
@@ -8129,12 +8165,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-09-12: 15 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-09-19: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">일</div>
-
-											<div class="heatmap-cell level-4" title="2026-06-21: 10 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-06-28: 11 activities"></div>
 
@@ -8169,12 +8205,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1411</div>
+										<div class="value">1422</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">127</div>
+										<div class="value">128</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -8193,13 +8229,13 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">566</span></span>
+									<span class="category-tag">기타<span class="count">567</span></span>
 
-									<span class="category-tag">연구<span class="count">328</span></span>
+									<span class="category-tag">연구<span class="count">330</span></span>
 
-									<span class="category-tag">자동화<span class="count">183</span></span>
+									<span class="category-tag">자동화<span class="count">184</span></span>
 
-									<span class="category-tag">개발<span class="count">77</span></span>
+									<span class="category-tag">개발<span class="count">79</span></span>
 
 									<span class="category-tag">운영<span class="count">73</span></span>
 
@@ -8273,7 +8309,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>Daily World News Report</h3>
-										<p>매일 06:00 KST<br/>Job ID: <code>f15fece6fda0</code><br/>상태: <span style="color:red">❌ error</span></p>
+										<p>매일 06:00 KST<br/>Job ID: <code>f15fece6fda0</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -8291,7 +8327,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>telecom-3sa-daily-news</h3>
-										<p>매일 08:30 KST<br/>Job ID: <code>d835badc5fdc</code><br/>상태: <span style="color:red">❌ error</span></p>
+										<p>매일 08:30 KST<br/>Job ID: <code>d835badc5fdc</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -8489,6 +8525,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-09-18 06:00 KST -->
+	<!-- Last updated: 2026-09-19 06:00 KST -->
 	</body>
 </html>
