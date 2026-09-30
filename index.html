@@ -424,6 +424,42 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-09-30</h3>
+										<p><strong>auto-trading: NHPLUG 장외·장후 주문 로직 개편 (12개 파일, git 3커밋)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-09-30</h3>
+										<p><strong>post1: 개인 사이트 갱신 (`index.html`, 커밋 `c041577`)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-09-30</h3>
+										<p><strong>skill 문서 갱신: korean-brokerage-trading-api(장후 미체결 처리·거래규칙 매핑), cron-job-maintenance, carhistory-automation</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-09-30</h3>
+										<p><strong>auto-trading 장후 주문 전환: NH 증권사 81(시간외단일가) 폐지에 대응한 선제 조치</strong> — 71(장후시간외 종가) + 크론 15:45로 장후 미체결 리스크를 낮춘 구조</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-09-30</h3>
+										<p><strong>성과 기준자본(`live_baseline`)과 주문 사이징 기준자본(`capital`)을 분리해 성과 측정이 주문 사이징 변경의 영향을 받지 않도록 격리</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-09-30</h3>
+										<p><strong>llm-wiki 인덱스/레지스트리: 신규 11 / 갱신 24 (총 17,346개, FTS 17,087). 레지스트리 35개 폴더</strong> — 신규 폴더 없음</p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-bug"></span>
 										<h3>2026-09-29</h3>
 										<p><strong>자동매매 성과 기준자본 수정</strong> — 거짓 -49.76% 표시 제거: live_baseline(5000032, 8/19 실입금액) 신설, 성과 수익률·목표 달성률 기준 변경, 구버전 cost_basis=1,000만 자동 이관 (커밋 3개)</p>
@@ -8576,7 +8612,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-09-23: 7 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-09-30: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-09-30: 10 activities"></div>
 
 										</div>
 
@@ -8607,12 +8643,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-09-24: 7 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-10-01: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">금</div>
-
-											<div class="heatmap-cell level-4" title="2026-07-03: 10 activities"></div>
 
 											<div class="heatmap-cell level-3" title="2026-07-10: 5 activities"></div>
 
@@ -8709,12 +8745,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1507</div>
+										<div class="value">1517</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">139</div>
+										<div class="value">140</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -8733,11 +8769,11 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">609</span></span>
+									<span class="category-tag">기타<span class="count">614</span></span>
 
 									<span class="category-tag">연구<span class="count">345</span></span>
 
-									<span class="category-tag">자동화<span class="count">200</span></span>
+									<span class="category-tag">자동화<span class="count">201</span></span>
 
 									<span class="category-tag">개발<span class="count">83</span></span>
 
@@ -8873,7 +8909,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>trading-quarterly-review</h3>
-										<p>매일 17:30 KST<br/>Job ID: <code>735752197849</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+										<p>매일 17:30 KST<br/>Job ID: <code>735752197849</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -8936,12 +8972,6 @@ section h2 {
 										<p>every 360m<br/>Job ID: <code>c7a28c5bec47</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>aftermarket-71-fill-probe</h3>
-										<p>once at 2026-09-30 15:42<br/>Job ID: <code>8a470569d235</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
-									</section>
-
 								</div>
 
 							</div>
@@ -8981,6 +9011,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-09-30 06:00 KST -->
+	<!-- Last updated: 2026-10-01 06:01 KST -->
 	</body>
 </html>
