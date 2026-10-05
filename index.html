@@ -425,6 +425,90 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-rocket"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>개인 사이트 업데이트·배포 (commit 23697c3, Activities 1383 · Cron jobs 30)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>LLM Wiki 일일 동기화 (신규 3 · 갱신 6, 총 17,380 파일 / FTS 17,121 · 357.7MB)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>통신 3사 Daily 뉴스 9건 → Google Drive 업로드 + suchl@sk.com 메일 발송</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-columns"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>주간 보안/컴플라이언스 모니터링 (시스템 에러 20건 · .env 노출 23건 · 이상 프로세스 0건)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>주간 디스크 위생 (회수 0B, 여유 86.57G · 자동삭제 없이 판단 요청 6건)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>세계 뉴스 요약(10-05) 생성, 전일(10-04) 메모리 자동 생성 + Notion 업로드</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>자동매매 실전 크론 ImportError 긴급 수정 (commit 4e3da5d) + 추이 CSV 10/2 중복 2행 정리</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>시장 휴장: 10/05(월) 개천절 대체공휴일로 KRX 전면 휴장(마지막 거래일 10/02, 다음 10/06). 주식분석·자동매매 브리핑 모두 10/2 종가 기준.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>자동매매 핵심 이슈: 14:00 PM · 15:45 장후코어 크론이 `ImportError: numpy C-확장(cpython-314)`로 실패. 원인은 Hermes 게이트웨이가 자식 프로세스에 python3.14 site-packages를 PYTHONPATH로 주입해 3.11 venv의 numpy/pandas를 가린 것. `run_live.py` 주입 경로 제거 가드 + `engine/live.py` `--no-save` 중복행 차단(2파일 +15줄). 오염된 PYTHONPATH 그대로 dry-run 재현 → exit 0. 휴장이라 피해 0이나 10/6 개장이면 매매가 통째로 막혔을 사안.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>자산(10/2 기준): 총 5,093,485원(+1.87%) / 예수금 2,034,000원 / 보유 5종목. 국면 조정·노출 50%. 10/6 예상 신호 없음.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>미확인: live 엔진 "조정 1일째" vs mock 리포트 "조정 67일째" 국면 카운터 불일치.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>보안 권고: 실제 .env(auto-trading/.env, .env.live, .hermes/.env) gitignore 확인, known_hosts.old 권한 644→600, Data 볼륨 78%.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>디스크 판단 요청: ollama models 5.34G · iMovie 4.31G · Trash 4.30G · state.db 1.68G · GarageBand 1.60G.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-05</h3>
+										<p><strong>크론 안정성: 10-05 총 88회 중 실패 2건(위 자동매매) 외 정상. 주차 감시 08:00~18:50 실행·일치 자리 없음(silent).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
 										<h3>2026-10-04</h3>
 										<p><strong>개인 사이트 업데이트·배포 (commit b635432 → main, Activities 1375 · Cron jobs 30)</strong></p>
 									</section>
@@ -8754,7 +8838,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-09-28: 8 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-10-05: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-10-05: 14 activities"></div>
 
 										</div>
 
@@ -8785,12 +8869,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-09-29: 12 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-10-06: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">수</div>
-
-											<div class="heatmap-cell level-4" title="2026-07-08: 7 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-07-15: 21 activities"></div>
 
@@ -8949,12 +9033,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1553</div>
+										<div class="value">1567</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">144</div>
+										<div class="value">145</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -8973,15 +9057,15 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">629</span></span>
+									<span class="category-tag">기타<span class="count">634</span></span>
 
-									<span class="category-tag">연구<span class="count">352</span></span>
+									<span class="category-tag">연구<span class="count">354</span></span>
 
-									<span class="category-tag">자동화<span class="count">206</span></span>
+									<span class="category-tag">자동화<span class="count">210</span></span>
 
 									<span class="category-tag">개발<span class="count">86</span></span>
 
-									<span class="category-tag">운영<span class="count">81</span></span>
+									<span class="category-tag">운영<span class="count">84</span></span>
 
 									<span class="category-tag">설계<span class="count">26</span></span>
 
@@ -9024,18 +9108,6 @@ section h2 {
 										<span class="icon solid fa-bell"></span>
 										<h3>daily-memory-to-notion</h3>
 										<p>매일 00:00 KST<br/>Job ID: <code>a65fb139eb12</code><br/>상태: <span style="color:green">✅ ok</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>weekly-tmp-cleanup</h3>
-										<p>매일 03:00 KST<br/>Job ID: <code>ce7e930faa1a</code><br/>상태: <span style="color:green">✅ ok</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>monthly-downloads-cleanup</h3>
-										<p>매일 04:00 KST<br/>Job ID: <code>63f9d2135abc</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -9125,7 +9197,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-live-afterhours-core</h3>
-										<p>매일 15:45 KST<br/>Job ID: <code>9bb90cb3e115</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 15:45 KST<br/>Job ID: <code>9bb90cb3e115</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -9137,7 +9209,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-intraday-alpha-pm</h3>
-										<p>매일 14:00 KST<br/>Job ID: <code>a9754dc1e9df</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 14:00 KST<br/>Job ID: <code>a9754dc1e9df</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -9182,6 +9254,18 @@ section h2 {
 										<p>매일 8-18:*/10 KST<br/>Job ID: <code>d57d8f9969fb</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>주간 디스크 위생</h3>
+										<p>매일 03:30 KST<br/>Job ID: <code>6e8ebd4fedf4</code><br/>상태: <span style="color:green">✅ ok</span></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>auto-trading no-write 가드 점검</h3>
+										<p>매일 08:00 KST<br/>Job ID: <code>488b9a13761b</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+									</section>
+
 								</div>
 
 							</div>
@@ -9221,6 +9305,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-10-05 06:00 KST -->
+	<!-- Last updated: 2026-10-06 06:00 KST -->
 	</body>
 </html>
