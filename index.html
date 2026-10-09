@@ -424,6 +424,96 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>카히스토리 무료 조회 사유 규명 완료(62대)</strong> — 10/8에 일별 한도로 막힌 무료 조회를 재시도. 10:17 시점에도 로그인·익명 모두 "일별 허용조회건수 초과"였는데, **핫스팟(SKT 회선)으로 IP를 바꾸자 한도 페이지가 사라짐 → 한도는 IP 기준임을 실측 확인**. 62건 전량 무료 조회(포인트 0) 성공</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>불가 사유는 사이트가 구분해 주지 않음(실측)</strong> — 오류 페이지 62건이 완전히 동일한 템플릿(5가지 사유를 나열만 함). 번호변경 차량(334우3609)은 정상 조회 → **번호변경은 불가 사유가 아님**</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>연식범위 추정 산출 → 엑셀 AB/AC열 반영</strong> — 예전 v4/v5 방식(차종 세대 + 사고시점) 계승, 이번 실측 152대를 정답으로 검증. 번호판 연도대역표는 구형 7자리에서 포함률 93.6%→42.3%로 악화돼 **폐기**. 채택 = ①번호판 체계(신형8→2019~ / 구형7→2004~2019) ②사고연도=상한(대차시작일) ③차종 단종정보 → **포함률 90.1% · 평균폭 8.3년**, 62건 전부 적용(신뢰도 상6·중25·하31, 폭평균 7.2년 — 신형8 2.8년 / 구형7 10.3년)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>차종 단종정보 45종 신규 조사</strong> — 세션 어디에도 저장돼 있지 않아(과거 자료는 사고연도로 잘림) 서브에이전트 5개 병렬로 51종 조사(한국 판매 기준·출처 URL 포함) → `모델_세대표.csv`. 효과: 포함률 손해 없이 폭 −0.4년. 같은모델 실측표본은 −4.6%p 손해로 제외, 국내 판매 종료 반영은 이번 62대에서 이득 0</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>최종 엑셀 완성</strong> — `230906_별지대차내역_사고차정보.xlsx`(원본 XML 바이트 보존, openpyxl 미사용, 백업 2개). R~Z 실측 9항목(152행) · AA 비고(62행) · AB 연식범위 · AC 추정신뢰도. 무결성 검증 통과</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>최종보고 작성</strong> — `최종보고_사고차정보.md`. 메일 발송은 지시 전까지 보류(Bear J 규칙: 외부 발송은 시킬 때만)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>통신 3사 뉴스 리포트(08:30)</strong> — 9건(SKT·KT·LGU+ 각 3) HTML → Drive 업로드 → suchl@sk.com 발송(Message ID 1a11ddcc185f17ff). 키워드: '모두의 AI' 10월 베타/12월 정식, B2B 업무수행형 AI, LGU+ 유심 IMSI 보안</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>주식 시장 동향 분석(16:00)</strong> — 한글날 휴장, **10/8 마감 기준** 리포트 + 휴장 중 글로벌 데이터. HTML·Drive·Notion·메일 발송, 칸반 5태스크. 스킬에 9c-17(휴장일 리포트 구성)·세션노트 반영</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>자동매매 크론 4건(08:30·10:00·14:00·15:45) 전부 휴장으로 스킵/읽기전용</strong> — **체결 0건**</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>세계 뉴스(금), 아침 날씨, 개인사이트 갱신(f5b2768, Activities 1,431), LLM Wiki 동기화(7,209파일·레지스트리 36), 메모리·wiki git 백업</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>로또 1245회 예측(10/10 추첨)</strong> — 5세트 저장, 41주차 중복방지 설정</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>국면 🟡 조정 1일차 유지(노출 50%)</strong> — 총자산 4,953,845원(누적 −0.92%, −46,187원), 예수금 2,024,880원, 보유 5종목 전량 코어 ETF. 직전 거래일 10/8 하루 −60,230원(−1.19%)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>10/9(금) 한글날 휴장 → 다음 거래일 10/12(월). dry-run 신호·주문계획 0건, 재개장 갭 출발이 국면 재판정(조정 유지 ↔ 하락 전환) 분기점</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cogs"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>carhistory 무료 조회는 IP 기준 한도 → 08:00 예약 크론은 IP가 그대로라 실패, 수동 핫스팟 전환만 성공. 자동화 방안 필요</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-09</h3>
+										<p><strong>park_watch(계양구 거주자우선주차) 종일 무알림 · supabase watchdog 정상 · 크론 에러 0건(4일 연속)</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-flask"></span>
 										<h3>2026-10-08</h3>
 										<p><strong>카히스토리 사고차량 일괄 조회 완료</strong> — 대차내역 엑셀(삼성84·현대58·KB35·DB44 시트) P열 사고차량 214대를 조회해 제조사·자동차명·배기량·사용연료·세부모델·연식·차체형상·용도및차종·최초보험가입일자를 R~Z열에 채움. 성공 152대 / 차량번호 오류 62대(불가 62건은 미과금) · 포인트 15,200P 사용(잔액 84,800P)</p>
@@ -9166,7 +9256,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-02: 7 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-10-09: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-10-09: 17 activities"></div>
 
 										</div>
 
@@ -9197,12 +9287,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-03: 13 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-10-10: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">일</div>
-
-											<div class="heatmap-cell level-4" title="2026-07-12: 9 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-07-19: 8 activities"></div>
 
@@ -9237,17 +9327,17 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1601</div>
+										<div class="value">1618</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">148</div>
+										<div class="value">149</div>
 										<div class="label">활동 일수</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">3.3</div>
+										<div class="value">3.4</div>
 										<div class="label">일 평균</div>
 									</div>
 
@@ -9261,17 +9351,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">651</span></span>
+									<span class="category-tag">기타<span class="count">656</span></span>
 
-									<span class="category-tag">연구<span class="count">359</span></span>
+									<span class="category-tag">연구<span class="count">362</span></span>
 
-									<span class="category-tag">자동화<span class="count">218</span></span>
+									<span class="category-tag">자동화<span class="count">223</span></span>
 
 									<span class="category-tag">개발<span class="count">88</span></span>
 
-									<span class="category-tag">운영<span class="count">84</span></span>
+									<span class="category-tag">운영<span class="count">85</span></span>
 
-									<span class="category-tag">설계<span class="count">28</span></span>
+									<span class="category-tag">설계<span class="count">29</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -9482,12 +9572,6 @@ section h2 {
 										<p>매일 7-11:*/5 KST<br/>Job ID: <code>1c14936c6666</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
 									</section>
 
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>carhistory-free-reason-fill</h3>
-										<p>once at 2026-10-09 08:00<br/>Job ID: <code>bc728b0364dd</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
-									</section>
-
 								</div>
 
 							</div>
@@ -9527,6 +9611,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-10-09 06:00 KST -->
+	<!-- Last updated: 2026-10-10 06:00 KST -->
 	</body>
 </html>
