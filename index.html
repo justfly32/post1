@@ -424,6 +424,72 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>my-media-agent 하루 종일 확장 (`~/projects/my-media-agent`, 세션 19:00~23:52, 커밋 26개)</strong> — GitHub(justfly32) 저장소 클론·설치 후 숏폼 제작 CLI를 대폭 확장.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>쇼츠 시리즈 일관성 엔진</strong> — 30편을 같은 캐릭터·화풍으로 이어 만드는 시리즈 모드, 레퍼런스 모드 강화(여러 장 등록·역할 지정·세트 저장/불러오기), 서사 바이블 누적, `project.json`(작업 컨텍스트)+`meta.json`(생성 이력), 로컬 일관성 자동 점검(어긋난 컷만 선별, API 비용 0), 컷 단위 재작업 메뉴, 시리즈↔프로젝트 설정 정본 통합.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>음성 자연스러움 개선</strong> — 문장 단위 합성·호흡 쉼·정규화 + `/voice` 엔진 선택. **B(무료 edge_natural·SunHi) 기본 확정**, 필요할 때만 유료 gpt. 쉼 1.5초 튐·컷 경계 0초 문제 수정 → 기본 간격 0.45→0.75초 → 최종 **문장 간 0.8~0.9초 난수** + 속도 ±2%p·음높이 ±1Hz 지터·첫 문장 앞 숨 고르기로 AI스러움 제거(`3f54085`).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>심해 시리즈 3화</strong> — '심해-연구소에서-올라온-이상한-녹음-파일' ep03을 B 음성으로 재조립(이미지 재생성 없음 $0), 이전 A 음성본은 `ep03_master_voiceA_이전음성.mp4`로 보존. GitHub 저장소 private 전환(20:27).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-flask"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>검은 목요일</strong> — 주식 분석 (16:05): 코스피 **5,554.22 (-7.57%)**·코스닥 **760.82 (-7.65%)** 동반 서킷브레이커(양 시장 동시 CB는 7/29 이후 두 달 반 만·올해 5번째). 미 9월 CPI 3.7% 쇼크·AI 수익성 의구심·외국인 반도체 매도(삼전 -1조4,573억, 12일 연속). HTML → Drive(`15IKLmbDzbm27--NNnlFUCapx0wzrE6P_`) → Notion → 이메일(`1a13e5ee3aac6181`).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>자동매매 브리핑</strong> — 아침(08:31)·저녁(16:01) 모두 **bear 국면 노출 0%·체결 0건**(장중 AM 10:00 / PM 14:00 / 장후 코어 15:45 전부 정상·무주문). 총자산 4,727,707원(누적 -5.45%), 보유 411060 금현물 18주(-7.06%)뿐.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>기술 뉴스 (08:02, 화·목·토)</strong> — Geek News 5 + Hacker News 5건 → HTML → 이메일(`1a13ca66a8aa73ea`).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>일상 크론 정상: 개인 사이트(`3a7fd19`), wiki 동기화·git 백업(`c63ac38`), memory/skills 야간 백업(`e71fce0`/`599ee59`), park 빈자리 감시, supabase keepalive, 일정 브리핑(일정 없음), 검색 백엔드 점검(ddgs 정상).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>media-agent 개발 리듬: 사용자 아이디어 → 즉시 구현 → 실측 검증의 연속. "경제적으로 영상 만드는 모드" → `/eco`, "영상 기본 품질 지정?" → `/quality`, "이미지 여러 장 중 선택 재생성" → 재작업 메뉴, "30편 시리즈 일관성?" → 시리즈 모드·바이블·project/meta 파일, "음성이 AI스러움" → silencedetect A/B 실측 후 간격·속도·음높이 랜덤화.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>비용 민감 대응: HeyGen($0.39)·유료 gpt 음성은 명시 선택 시에만, 기본은 무료 로컬 모션·무료 자연 음성 엔진.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-10-15</h3>
+										<p><strong>개발-지식 고정: 하루 만에 프로젝트 신설 + 대규모 기능 확장 → (스킬화 후보).</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-database"></span>
 										<h3>2026-10-14</h3>
 										<p><strong>식단·영양 계산기 앱 구축 (`~/projects/diet-calc`, 18:30~19:13)</strong> — 식약처 전국통합식품영양성분정보 표준데이터 3종을 정리해 **영양 DB 53,797건**(`data/foods.js`, 4.6MB) 확보, 단일 HTML 앱 완성. 성별·나이·신장·체중·활동량 → BMR(Mifflin-St Jeor) → TDEE → 목표 열량, 탄:단:지 비율 5종, 음식 검색·섭취량(g) 환산, 달성률 진행바(초과 시 붉게), 날짜별 localStorage 저장, CSV 내보내기. `file://` 더블클릭 실행·검색·합계 검산까지 브라우저 검증 완료 → ZIP(0.91MB)·README·화면예시 PNG 산출.</p>
@@ -9471,7 +9537,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-08: 12 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-10-15: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-10-15: 15 activities"></div>
 
 										</div>
 
@@ -9502,12 +9568,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-09: 17 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-10-16: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">토</div>
-
-											<div class="heatmap-cell level-4" title="2026-07-18: 30 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-07-25: 12 activities"></div>
 
@@ -9573,12 +9639,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1659</div>
+										<div class="value">1674</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">154</div>
+										<div class="value">155</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -9597,15 +9663,15 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">674</span></span>
+									<span class="category-tag">기타<span class="count">679</span></span>
 
-									<span class="category-tag">연구<span class="count">373</span></span>
+									<span class="category-tag">연구<span class="count">375</span></span>
 
-									<span class="category-tag">자동화<span class="count">229</span></span>
+									<span class="category-tag">자동화<span class="count">230</span></span>
 
-									<span class="category-tag">개발<span class="count">91</span></span>
+									<span class="category-tag">개발<span class="count">93</span></span>
 
-									<span class="category-tag">운영<span class="count">86</span></span>
+									<span class="category-tag">운영<span class="count">87</span></span>
 
 									<span class="category-tag">설계<span class="count">31</span></span>
 
@@ -9635,7 +9701,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>Update personal site timestamp and notify Telegram</h3>
-										<p>매일 06:00 KST<br/>Job ID: <code>15e77e7ffb49</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 06:00 KST<br/>Job ID: <code>15e77e7ffb49</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
 									</section>
 
 									<section>
@@ -9731,7 +9797,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>매일 아침 날씨 (인천 계양구, 단기+중기)</h3>
-										<p>매일 07:00 KST<br/>Job ID: <code>f4231286604e</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 07:00 KST<br/>Job ID: <code>f4231286604e</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -9755,7 +9821,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-morning-briefing</h3>
-										<p>매일 08:30 KST<br/>Job ID: <code>82cb11d1c019</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 08:30 KST<br/>Job ID: <code>82cb11d1c019</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
 									</section>
 
 									<section>
@@ -9857,6 +9923,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-10-15 06:00 KST -->
+	<!-- Last updated: 2026-10-16 06:00 KST -->
 	</body>
 </html>
