@@ -425,6 +425,132 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>신규 시리즈 '기억 복원 상담소' 본격 제작 (my-media-agent 32커밋, 00:05~21:12)</strong> — 하루 만에 기획→제작 게이트→영상 6편 완성.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>기획 정본 6종(시놉시스·세계관·캐스팅·관계·결정목록·제작규칙) + 30화를 10사연 × 3편 구조로 재편성. 화면 등장 인물은 지우·세라 2인 고정, 의뢰인은 물건·빈자리·나레이션으로만.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>캐릭터·배경 시트 7장 생성</strong> — 1차 생성에서 **모든 배경에 고양이가 섞이는 사고**(이미지 생성기가 다른 프로젝트 앵커를 자동 주입) 원인 잡고 `context=False` + 부정어로 재생성.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>대본 EP01~09 완성(위반 0·점수 100) → 이후 EP10~30도 생성. 컷1 사연 첫 문장 반복 금지 규칙을 새로 배선(자동 감지 게이트 포함).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>영상 EP01~06 완성: EP01 재마감(2.29Mbps → 정상 비트레이트, 28.4초), EP04 「웃음소리 없는 방」·EP05 「웃음이 멈춘 날」·EP06 「라디오」 신규 제작(편당 $0.054 = 이미지 3장, 낭독·BGM·조립은 무료/로컬).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>EP04 검증에서 컷2 인물 오류(오세라 자리에 상담사 생성) 발견 → 렌더 경로·재사용 판정·재생성 도구 3곳 모두 컷 인물을 프롬프트에 넘기지 않던 누락 수정.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>파이프라인 단일 기준화: make_scripts 생성 루프에 톤 검사(NB.validate)를 통합 → 내레이션 위반 35건 → 2건. 재작성 4회까지 강제.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>발행 도구: 장르명 '쇼츠 드라마' 고정 + 해시태그 3개 통일 + 시리즈 재생목록 자동 추가. UI에 키 관리 화면 `/keys` 신설(값 노출 없이 교체·지문·잔액 확인). `/사례` 메뉴 제거(시리즈에서 관리).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>발행 일정 확정: 하루 3편 = 12:00 · 18:00 · 21:30(A안). 상담소 발행 크론(eff22d71570d, 일시정지) + 재개 잡(10-25 06:00) 신설.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>심해 시리즈: 채널 9편(공개 6 + 10-21 07:00·07:05·07:10 예약 3), 남은 EP10~30 = 21편. 발행 크론 A/B 재개 예약(10-21 06:05 B · 12:00 A) → 재개 후 하루 6편, 10-24경 완주 예정.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>크론 장애 3건 → 복구: 00:10 심해 발행 A·08:00 geek-hacker-news·08:30 자동매매 아침 브리핑이 `RecursionError`(Hermes 런타임 stdout 프록시 재귀, 게이트웨이 14일 연속 가동 누적)로 실패 → 게이트웨이 재시작(PID 720 → 52164, 08:50)으로 해소. 복구 중 발행 인증 만료·시리즈 해석 버그 2건 수정(1f7e39f), 심해 EP07~09 예약 업로드 복구.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>모델 경로 정리: 대화·크론 메인 = OpenRouter(deepseek/deepseek-v4.1-flash), fallback = opencode-go 등록(BJ 직접 수정). 미디어 에이전트도 이미지·LLM 전부 OpenRouter 경유로 통일(평문 키 1곳 제거).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>이미지 생성 402의 원인 규명: 크레딧은 $99.77 남아 있음(키 한도 $100 · 사용 $0.23) → 원인은 Seedream 5.0 Flash 모델 접근 제한(같은 키로 gemini-2.5-flash-image는 성공).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>car-year-lookup 대차내역 표준화: 72.8MB xlsx(시트 4개) → 사고 32,772행·대차 32,810행에 `표준사고차종`·`표준대차차종` 열 추가 + `표준차량모델`(772행)·`표준차량_기준` 시트 동봉, 드라이브 업로드. 내부 정보 제거한 작업보고서 + 재사용 기준서(179줄) 작성.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>일상 크론 정상: 개인사이트(db894f5, 배포 200) · wiki git 백업 · 메모리 백업(01:00) · 아침 날씨 · 보안 모니터.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>주식 분석(16:00): 코스피 5,552.74(−3.73%) · 코스닥 781.97(−3.33%). 이틀 반등분(+213.79pt) 하루에 전부 반납, 25개 업종 전부 하락. 외국인 −5,300억·기관 −1조48억 vs 개인 +8,981억. HTML 리포트·Drive·Notion(251블록)·suchl@sk.com 메일 완료.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>자동매매(16:00): bear 1일째·노출 0%, 총자산 4,720,687원(입금 대비 −5.59%), 예수금 90%. 금 헤지 목표 복원으로 ACE KRX금현물 1주 매수(19주, −8.10%).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>상담소 파이프라인 원칙 정착: 검사 통과 못 하면 다음 단계로 넘어가지 않는다</strong> — 생성기 안에서 재작성, 편당 사람 승인, 유료는 이미지 단계 하나뿐($0.054).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>실측 비용 감각: 대본 30편 ≈ $1.7 (편당 $0.057) · 이미지 30편 ≈ $1.62 → "대본도 공짜가 아니다".</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>발행은 '업로드(API 한도 6편/일)'와 '공개(서버 예약, 한도 없음)'를 분리하는 구조로 정리</strong> — 몰아 올리고 여러 날에 흩어 공개.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-10-20</h3>
+										<p><strong>제작 과정에서 낸 실수 3건을 그대로 기록·교정: 임포트 순서 오류, 블록 삭제 범위 오과(→ git diff로 복구), 셸 인자 분리 실패.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
 										<h3>2026-10-19</h3>
 										<p><strong>my-media-agent 4일차 (커밋 48개, 00:19~23:46)</strong> — 심해 시리즈 **30화 완결** + 유튜브 채널 개설·발행 파이프라인.</p>
 									</section>
@@ -9757,7 +9883,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-13: 8 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-10-20: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-10-20: 21 activities"></div>
 
 										</div>
 
@@ -9788,12 +9914,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-14: 10 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-10-21: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">목</div>
-
-											<div class="heatmap-cell level-4" title="2026-07-23: 18 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-07-30: 9 activities"></div>
 
@@ -9921,17 +10047,17 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1733</div>
+										<div class="value">1754</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">159</div>
+										<div class="value">160</div>
 										<div class="label">활동 일수</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">3.5</div>
+										<div class="value">3.6</div>
 										<div class="label">일 평균</div>
 									</div>
 
@@ -9945,17 +10071,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">708</span></span>
+									<span class="category-tag">기타<span class="count">719</span></span>
 
-									<span class="category-tag">연구<span class="count">380</span></span>
+									<span class="category-tag">연구<span class="count">382</span></span>
 
-									<span class="category-tag">자동화<span class="count">237</span></span>
+									<span class="category-tag">자동화<span class="count">241</span></span>
 
-									<span class="category-tag">개발<span class="count">97</span></span>
+									<span class="category-tag">개발<span class="count">98</span></span>
 
 									<span class="category-tag">운영<span class="count">89</span></span>
 
-									<span class="category-tag">설계<span class="count">31</span></span>
+									<span class="category-tag">설계<span class="count">34</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -10001,7 +10127,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>daily-geek-hacker-news</h3>
-										<p>매일 08:00 KST<br/>Job ID: <code>3d0b92cb1d6e</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 08:00 KST<br/>Job ID: <code>3d0b92cb1d6e</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -10103,7 +10229,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>auto-trading-morning-briefing</h3>
-										<p>매일 08:30 KST<br/>Job ID: <code>82cb11d1c019</code><br/>상태: <span style="color:green">✅ ok</span></p>
+										<p>매일 08:30 KST<br/>Job ID: <code>82cb11d1c019</code><br/>상태: <span style="color:red">❌ error</span></p>
 									</section>
 
 									<section>
@@ -10168,8 +10294,20 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-bell"></span>
-										<h3>심해 발행 진행 — 매일 00:10 다음 6편 비공개 업로드+예약</h3>
-										<p>매일 00:10 KST<br/>Job ID: <code>94e321b817b7</code><br/>상태: <span style="color:red">❌ error</span></p>
+										<h3>심해 발행 B 재개 (1회성 — 10-21 06:05)</h3>
+										<p>once at 2026-10-21 06:05<br/>Job ID: <code>7594cf833abc</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>심해 발행 A 재개 (1회성 — 10-21 12:00)</h3>
+										<p>once at 2026-10-21 12:00<br/>Job ID: <code>e494c4c2775e</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>상담소 발행 재개 (심해 30편 완주 후 — 10-25 06:00)</h3>
+										<p>once at 2026-10-25 06:00<br/>Job ID: <code>abf808ca7ad8</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
 									</section>
 
 								</div>
@@ -10211,6 +10349,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-10-20 06:00 KST -->
+	<!-- Last updated: 2026-10-21 06:00 KST -->
 	</body>
 </html>
