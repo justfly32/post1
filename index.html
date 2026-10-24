@@ -425,6 +425,78 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>66.33초 · 원본 149.9MB / 공유용 28.4MB. 오프닝 안내 페이지("운전자보험 100% 활용법") · 노란 자막(#FFD400+검은 외곽선) · 여명준 아바타 6컷($2.40)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>"목소리가 깨진다" → 화질 아님, 오디오 클리핑 진단(원본 input TP +2.26dB) → linear 2-pass loudnorm으로 max -1.5dB 해결. (`clip.audioGain`은 렌더에 미반영되는 버그)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>여명준 배경 순백 → Lumetri 그레이딩 / 의뢰인 서류 한자 낙서 → 백지화 + FilmCraft 텍스트로 대체 (★HeyGen·Seedream 이미지에는 글자 금지)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>방식: 옵션3 하이브리드 = 동화 삽화 + 여명준 실사 재활용($0) + 기존 able 엔드카드</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>삽화 8장($0.144) → 개미가 사람 여성 얼굴로 생성 → 코드 ref 아님 확인(meta `ref_images=None`) → 베짱이 스타일 곤충 얼굴로 ant·box·relief 3장 재생성($0.054) = 삽화 총 $0.198</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>나레이션: 클라우드 TTS 전부 불가(Gemini 429 · OpenAI/ElevenLabs 키 없음 · edge-tts 403) → macOS `say` Yuna rate 160</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>71.02초 · 1080×1920 · 원본 160.9MB / 공유용 28.9~29.3MB · 음량 -17.5dB</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>★ FilmCraft 자막 표준 확립: SRT 캡션(`captions.import` + `captions.setStyle`</strong> — 폰트·크기·색·**배경 박스**·외곽선·anchor·margin) = ffmpeg 스타일. **`burnCaptions:true` 필수**(기본 false라 자막이 화면에 안 박힘 — 실제 사고 발생)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>자막을 컷·나레이션 시작 시점에 정확히 맞춤(딱.딱.딱), 화자 라벨 제거, size 48</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>대표님 지시: "앞으로도 필름크래프트 자막은 이렇게 하자" → SRT 캡션 방식 확정</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>"개미가 기존 심해 윤서 이미지가 쓰였네" → 원인 규명(생성 프롬프트가 사람형 지시라 여성 얼굴 생성, 코드 아님)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-10-24</h3>
+										<p><strong>재현 가능하게 스크립트화: `gen_ant_anchor.py`·`gen_grasshopper_anchor.py`·`gen_rest_anchors.py`·`gen_ant_v2.py`·`gen_box_relief_v2.py`</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
 										<h3>2026-10-23</h3>
 										<p><strong>EP03 「그렇습니까」 · EP04 「증거」 완성. 테스트 컷 2종(문없음·상담소화풍)도 마스터 산출</strong></p>
 									</section>
@@ -10464,8 +10536,6 @@ section h2 {
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">월</div>
 
-											<div class="heatmap-cell level-4" title="2026-07-27: 12 activities"></div>
-
 											<div class="heatmap-cell level-4" title="2026-08-03: 9 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-08-10: 11 activities"></div>
@@ -10643,7 +10713,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-17: 13 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-10-24: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-10-24: 12 activities"></div>
 
 										</div>
 
@@ -10674,6 +10744,8 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-18: 14 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-10-25: 0 activities"></div>
+
 										</div>
 
 									</div>
@@ -10683,12 +10755,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1860</div>
+										<div class="value">1872</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">163</div>
+										<div class="value">164</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -10707,13 +10779,13 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">794</span></span>
+									<span class="category-tag">기타<span class="count">804</span></span>
 
 									<span class="category-tag">연구<span class="count">389</span></span>
 
 									<span class="category-tag">자동화<span class="count">244</span></span>
 
-									<span class="category-tag">개발<span class="count">107</span></span>
+									<span class="category-tag">개발<span class="count">109</span></span>
 
 									<span class="category-tag">운영<span class="count">93</span></span>
 
@@ -10883,7 +10955,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>주간-주식매매-진행경과-및-전망</h3>
-										<p>매일 17:00 KST<br/>Job ID: <code>2728d2058601</code><br/>상태: <span style="color:red">❌ error</span></p>
+										<p>매일 17:00 KST<br/>Job ID: <code>2728d2058601</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -10985,6 +11057,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-10-24 06:00 KST -->
+	<!-- Last updated: 2026-10-25 06:00 KST -->
 	</body>
 </html>
