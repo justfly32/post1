@@ -425,6 +425,108 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>묶음01 185.60초 · 묶음02 152.70초 · 묶음03 156.52초 · 묶음04 163.80초 · 묶음05 166.40초</strong> — 전편 자체 게이트 PASS</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>묶음05 = 5편 중 가장 깔끔: 자막 560개 · 깨진 것 0 · 미세틈 0곳 · 373.1MB/23.9MB · 커밋 `4b45968`(23:41)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>제작 파이프라인을 ffmpeg 스크립트 → FilmCraft 프로젝트로 재구축(묶음01~05 전부) · 묶음03 규격을 01·02에 이식</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>★ 자막 깜빡임 근본 해결</strong> — FilmCraft 의 time 프레임 내림(floor) 보정 (`b3de5aa`)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>자막 고급 3기법(트래킹·닦아내기·지진) + 프리미어 예능 자막 4기법 이식 검증 (`f275325`·`3d8a082`)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>카드가 묶음마다 안 바뀐 사고 → 원인 규명 후 공용 스크립트로 교체(`b8a2b5b`)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>캐릭터 고정 누락 → 재발 방지 3중(`2aac435`) · ep06_c04 정지 컷은 push 프리셋이 YDIF 0.00 을 만든 것이 원인(`ee8436a`)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>재생성본이 무시되는 사고 → old-source 격리 규칙(`ace9734`)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>이미지 인물 일관성</strong> — 사물 컷 억제 + 전 컷 캐릭터 고정($0.36, `b6b2e4d`)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>이미지 안 글자 언어 제약을 공통 생성기에 강제(없거나 영어만) → 묶음01 v12 중국어 텍스트 제거</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>검수 게이트 3층 구조(공통/구조/작품별) + 배치 게이트: 첫 1개 검수 통과해야 나머지 생성</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cogs"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>스킬 재구성 + 파일 정리(외장 이관)</strong> — `86675aa`</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>영상 외부 재생용 링크</strong> — Range 지원 서버 + 터널(`6b2f958`)</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>영상 생성 기본 provider fal → openrouter 변경</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>fix_asr: whisper 오타 10건 추가(묶음02 전사 로그 근거)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>묶음06 (EP16~18 「귀환」) 착수</strong> — 29컷, 이미지 $0.52 + HeyGen 9컷 $0.92 ≈ **$1.44**, 예상 ~165초</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-10-26</h3>
+										<p><strong>my-media-agent 커밋 35건(10-26 08:22~23:41) · 미커밋 8건 남음</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
 										<h3>2026-10-25</h3>
 										<p><strong>★ 아바타 음성 잘라내기 지점 교정: 음량 프로파일(1.55~2.05s 무음)만 보고 2.05초부터 잘랐다가 "보험료만 내고 버려두지 마세요"가 남음 → whisper 전사로 실제 대사 확인(단어 '법무법인' 4.82s) → 원본 4.72~8.15초(3.43초)만 사용, 자른 뒤 재전사로 검증</strong></p>
 									</section>
@@ -10686,7 +10788,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-19: 17 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-10-26: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-10-26: 19 activities"></div>
 
 										</div>
 
@@ -10717,12 +10819,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-20: 21 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-10-27: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">수</div>
-
-											<div class="heatmap-cell level-4" title="2026-07-29: 9 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-08-05: 9 activities"></div>
 
@@ -10881,12 +10983,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">1893</div>
+										<div class="value">1912</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">165</div>
+										<div class="value">166</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -10905,17 +11007,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">823</span></span>
+									<span class="category-tag">기타<span class="count">836</span></span>
 
 									<span class="category-tag">연구<span class="count">389</span></span>
 
 									<span class="category-tag">자동화<span class="count">244</span></span>
 
-									<span class="category-tag">개발<span class="count">109</span></span>
+									<span class="category-tag">개발<span class="count">112</span></span>
 
 									<span class="category-tag">운영<span class="count">93</span></span>
 
-									<span class="category-tag">설계<span class="count">44</span></span>
+									<span class="category-tag">설계<span class="count">45</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -11183,6 +11285,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-10-26 06:00 KST -->
+	<!-- Last updated: 2026-10-27 06:00 KST -->
 	</body>
 </html>
