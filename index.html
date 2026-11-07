@@ -424,6 +424,138 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-utensils"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>CAD 소스 DWG 3종(총 114MB)을 DXF로 변환 후 INSERT 블록을 폴리라인으로 베이크, 기하 해시 중복 제거 + 레이어/텍스트 기반 카테고리 분류 → 심볼 500개 SVG 팔레트(`public/symbols/index.json`). 팔레트는 카테고리별 추천 24개만 노출, 검색으로 전체 500 접근.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>이름 없는 침대 3종은 큐레이션(`tools/symbol_curation.json`)으로 등록. 배치한 심볼의 크기조절·회전·드래그 핸들 버그 수정.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>죽어 있던 `📥 DWG 불러오기` 복구: `tools/cad_convert_server.py`(ODA 변환, :8791) + `api/cad-import.js`(Vercel 프록시) + 앱 클라이언트(로컬/프록시 자동 폴백, 한글 파일명 복원, 실패 진단 메시지).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>평면편집: 외곽맞춤(✂)을 실제 외곽 기준으로 교체 · 외곽 넘는 방 자동 트림/빈 공간 채우기 → BJ 결정으로 채우기 폐기(복도 남발), 평면은 외곽 밖 부분을 빗금으로 유지 · 겹침 파내기(cells) 일반화 + 경계 자동정렬 + 화살표/드래그 이동 · 문/창/오프닝 벽 라인 자동 스냅 · 자동맞춤은 긴 선 기준 + 크기 미세조정.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>3D: 대각선·자유외곽에서 방이 벽 밖으로 삐져나와 '안쪽이 보이던' 문제, 외벽 클리핑으로 3D가 비어 보이던 문제, 4층 실내가 클립에 걸려 창이 검게 보이던 문제(방 복원 + 해당 층 noClip 안전장치), 창문 층별 외벽 타공, 창은 항상 최근접 외벽에 개구부 + 유리 완전 투명(opacity 0.03) + 빈 방 실내 점광원.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>커밋: `f20028d`(심볼 500) → `b785e72`(DWG 변환 서비스) → `a873371`(자유외곽·빗금) → `c863c0b`(창 투명화) 등 20:32~23:41 25건.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>오전(12:00): 전일 16:30 크론이 export 중 사망한 잔여물 복구. `h1Fw6ZvO_h4_ai.mp4`가 24.1MB였지만 moov atom 없음(깨진 파일) → 삭제 후 fcproj 재export만. 44.1초·33.1MB·−14.0 LUFS·peak −2.7dB → `fd7Fg_dbFWo` 「GPS도 안 통하는 바다에서 혼자 다니는 잠수함ㅋㅋ」 12:00 예약. 비용 0원(신규 발굴·TTS 없음).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>오후(22:00): 테슬라 Cybertruck FSD POV(배율 931x, 원본에 영어자막 없음) → 9컷·Gemini TTS Charon 33.86초 → `EwZ-mM4MBCc` 33.9초 · −14.0 LUFS · peak −3.0dB · 게이트 PASS(기본5+개별6). 20:00은 기억상담소 1이 점유해 22:00로 회피(하루 2편 상한 준수).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cogs"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>⚠ `containsSyntheticMedia`는 insert 응답엔 true여도 재조회 시 필드 없음(반복 현상) → 스튜디오에서 수동 'AI 사용' 설정 필요.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>EP3 「감춘 편지」 `4-ZxPBF4ecM` · 21:00 예약(12:00Z) · 재생목록 PLMtAfpC6wafA · verify ok=true. 3/8, 잔여 5편(EP4 형의 유언 ~ EP8 단골의 한 줄). 썸네일 파일 없어 유튜브 자동 선택.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>국면 bear 19거래일째, 노출 0.0, 총자산 4,723,252원(기준 5,000,032 대비 −5.54%).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>주간 4,707,767 → 4,723,252(+0.33%, +15,485원). 같은 주 KOSPI 5,730 → 5,060(−11.71%), KODEX200 −12.99% → 지수 대비 +12.0%p. 폭락 주간에 방어가 처음으로 값을 함(직전주 −3.2%p의 정반대).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>매매 매수 0 / 매도 0 / 미체결 0(시그널 30건 전량 미실행). 보유는 금 411060 19주 468,445원(9.92%) 하나, 손익 100%가 금(+3.42%). 예수금 4,254,807원(90.1%).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>다음 주 4.68~4.76M 횡보 예상·매매 0건 기본. 삼성전자 RSI 31.7(임계 30 근접), 재분류 게이트까지 +28.5% 필요(전주 +11.2%), MA60/MA200 데드크로스 진행. 리스크: 금 단일 익스포저·현금 90%가 반등을 놓치는 구조.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>⚠ 로깅 근거가 `live_track_live.csv` 하나뿐</strong> — daily MD(10-02 정지)·모의 트래킹(8주 정지)·스냅샷 스크립트 부재.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>llm-wiki 05:30: 신규 99·갱신 64 → 총 14,689개, index.db 589.5MiB(600MiB 라인 아래), 레지스트리 49폴더, 크론 에러 0건(4일 연속 무에러). 게이트웨이 12일 7시간 무재시작(RecursionError 임계 조건 그대로), `fallback_providers` 구형 v4-flash-0731 교체 승인 대기.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>개인 사이트 06:00 갱신(Activities 1,936 · 크론 41 · `b9c957c` push) · Wiki git backup(`8f66c64` 계열) 정상.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>기술뉴스 08:00: Geek News/Hacker News 10건(주제: Rust 재작성 물결·AI 코딩이 생산성 지표를 바꾸는 중·Firecracker VM 탈출·Anthropic 밸류에이션) → 메일 발송(suchl@sk.com, `1a1b3188459c1cd1`).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>로또 22:00 1249회: 당첨 2·11·16·25·34·35 + 보너스 14. 5세트 최고 2개 → 0원. 누적 −30,000원(90세트/90,000원, 당첨금 60,000원), 평균 0.91개</strong> — 통계적 유의성 없음(정직 보고 원칙 유지). tracker 반영 완료.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>arch-maker는 이날 하루에만 25커밋. 20:32 심볼 추출 시작 → 23:41 창 투명화까지 BJ 피드백을 실시간 반영한 집중 개편 세션.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>BJ 피드백 3건이 설계를 바꿈: ① 빈 공간을 복도로 채우지 말 것 ② 평면은 외곽을 넘어간 부분을 삭제하지 말고 빗금으로 유지 ③ 모든 창은 투명하게.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-07</h3>
+										<p><strong>AI 오전편은 "새로 만들지 않고 중단 잔여물을 살리는" 판단으로 비용 0원에 슬롯을 지킴(깨진 파일은 ffprobe로 먼저 검사 → moov 없으면 재export만).</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-check-circle"></span>
 										<h3>2026-11-06</h3>
 										<p><strong>소재 `Uexur9rOxW4` "This $5,000 Cooking Robot" (Carros Show, 32분, 251만 조회 / 구독 26.8만 ≈ 배율 9.4x). 최근 사용분(로봇축구·안경·창고로봇·허블·테슬라·드론쇼·심해) 전부 중복 제외, 요리 로봇 첫 소재.</strong></p>
@@ -12048,8 +12180,6 @@ section h2 {
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">월</div>
 
-											<div class="heatmap-cell level-4" title="2026-08-10: 11 activities"></div>
-
 											<div class="heatmap-cell level-4" title="2026-08-17: 20 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-08-24: 7 activities"></div>
@@ -12227,7 +12357,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-10-31: 18 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-11-07: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-11-07: 22 activities"></div>
 
 										</div>
 
@@ -12258,6 +12388,8 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-11-01: 17 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-11-08: 0 activities"></div>
+
 										</div>
 
 									</div>
@@ -12267,12 +12399,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">2127</div>
+										<div class="value">2149</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">177</div>
+										<div class="value">178</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -12291,17 +12423,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">993</span></span>
+									<span class="category-tag">기타<span class="count">1006</span></span>
 
 									<span class="category-tag">연구<span class="count">393</span></span>
 
-									<span class="category-tag">자동화<span class="count">258</span></span>
+									<span class="category-tag">자동화<span class="count">261</span></span>
 
-									<span class="category-tag">개발<span class="count">127</span></span>
+									<span class="category-tag">개발<span class="count">130</span></span>
 
-									<span class="category-tag">운영<span class="count">106</span></span>
+									<span class="category-tag">운영<span class="count">107</span></span>
 
-									<span class="category-tag">설계<span class="count">56</span></span>
+									<span class="category-tag">설계<span class="count">58</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -12605,6 +12737,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-11-07 06:00 KST -->
+	<!-- Last updated: 2026-11-08 06:00 KST -->
 	</body>
 </html>
