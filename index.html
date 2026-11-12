@@ -424,6 +424,192 @@ section h2 {
 								<div class="features">
 
 									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>도면 보기: 150dpi·한글 깨짐(`401-ë°©3`) → 240dpi(3120×3949px)·한글 정상(401-주방·401-안방·드레스룸), 제목 없는 도면도 1장 렌더.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>평면도_4F: 실 11→13(이름 13/13 정확) · 문 0→5 · 창 0→3 · 층 1F→4F · 1740ms→32ms. 클라 파서도 13/5/3으로 서버와 완전 일치(3ms).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>원당동1000-15(2.8MB·5시트): 실 46 유지·이름 46/46 · 문 0→26 · 창 0→64(개구부 90) · width/depth null→12.27×16.04m · 2522ms. 층 배분 1F 3/13·2F 11/15·3F 7/11·4F 5/16·다락 0/9.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>문 이중집계 제거: 우리 DXF는 한 문을 LINE(개구부)+ARC(경첩)로 그려 2배로 세던 문제 → 짝 인식 후 병합. 4F 8문·오차 2건(최대 0.45m) → 5문·오차 0, 3F 17문·오차 9건(최대 1.19m) → 9문·오차 0.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>호 단독 문 판정 규칙 통일: '경첩 위상각' → '문설주(벽 끝점)로 이어지는 광선, 동점이면 긴 벽'</strong> — 서버(`dxf_layers.py`)·클라(`dxfImport.js`) 동일 적용. 호만 남긴 사본 복원 **11/11**(4F 3·3F 8), 오차 0.00m·회전불일치 0.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>내보내기 거울상 버그: `dxfExport.js`가 세로문 스윙호를 90→180°(벽 반대쪽)로 그려 재가져오기 시 rot -45°·위치 0.45m 어긋남 → 180→270°로 수정.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>클라 dxfImport.js 재작성: 자체 내보내기 DXF 재가져오기 0/55실 → 55/55실(층별 5/5, 이름 49/55)·문 50/50·창 75/76 (실도면 4F 13/5/3 · 3F 12/9/3).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>미완: 다중시트 클라 경로(원당동 클라 29실·59문 vs 서버 46/26/64), ego 브라우저 실제 플로우(파일 선택→변환→층 적용) 미착수, 회전·슬리버 셀 6건 위치오차, 원당동 초안 수준. 커밋 안 함</strong> — 변경 6파일(+536/−60) + 신규 12개 워킹트리, worklog만 기록.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>건축이야기 ep4 「경복궁 : 273년 동안 폐허였던 궁」 `hUx5VQ_EINQ` · 11-12 11:55 KST 예약 · 재생목록 PLE1EAsbjd4F8 추가 · verify ok(private·publishAt 일치·제목 일치).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>AI 해외화제 11-12편 `8_D4jrSwbKk`</strong> — Monumental 벽돌공 로봇(원본 `2-Q2F0Fcx4A`, 47,390뷰/구독 601 = 배율 67.6x) · 38.33초·1080×1920 24fps·16.4MB · **20:00 KST 예약** · Integrated -14.0 LUFS/TP -1.7dBFS/black 0/무음 0 → **GATE PASS** · 재생목록 PLVeJ82NcP6XU 27개 확인 · 클릭형 세로 썸네일 vision 검증.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>기억상담소 애니편: 남은 편 0/8 → 당일 업로드 없음(EP5 `po7iE2pqq50`이 11-12 21:00 공개, EP6~8은 11-13·14·15).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>코스피 5,342.73 (-32.63, -0.61%) 사흘 만에 하락 · 코스닥 696.53 (-8.57, -1.22%) 700선 하루 만에 반납 · 코스피200 833.57(-0.57%) · 장중 5,458.84(+1.55%) ↔ 5,293.05(-1.53%), 변동폭 165p · 거래대금 코스피 20.57조/코스닥 5.56조.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>수급(4주체 합계 0 검산): 코스피 개인 -2,053 / 외국인 +3,698 / 기관 -6,888 / 기타법인 +5,242억 · 코스닥 개인 +3,075 / 외국인 -3,525 / 기관 +435억. 외국인 3거래일 연속 순매수, 기타법인 자사주 매수가 지수 방어.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-chart-line"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>특징주: 상한가 코스피 3·코스닥 8 · 지니언스 +21.04%(영업익 253%↑)·이노메트리 +23.14%·바이브컴퍼니 +24.06%·JYP Ent. +16.54% / 급락 넥스아이 -39.88%·DB하이텍 -16.36%·NHN -14.57%·메리츠금융지주 -13.05%·NAVER -6.43%. 삼성전자 208,000(+0.97%)·SK하이닉스 1,254,000(-1.80%).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>매크로: 다우 +0.49%/S&P500 +1.31%/나스닥 +1.60% · WTI 86.26 · 원/달러 1,331.30(-6.20) · 미10년 4.994%. 키워드: 옵션만기일 변동성·젠슨 황 리스크·1.6조 담합 과징금·12월 빅스텝 우려.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>산출물: HTML 33.5KB(디자인 업그레이드 성공·KPI 6·섹션 9) · Drive 업로드 · Notion 283블록 검증 · suchl@sk.com 메일 발송.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>자동매매: 총자산 4,705,487원(-11,115 / -0.24% · 기준 대비 -5.89%) · 예수금 4,254,807(90.4%) · 411060 ACE KRX금현물 19주 @26,681→23,720(-11.10%, 평가 450,680원) · AM 4,709,572 → PM 4,706,247 → 장후 4,705,487 · 노출 0%, 체결 0건(AM·PM·장후 3개 크론 모두 신호 없음). 금 비중 9.58%(밴드 8~12% 내)라 리밸런스도 없음.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>llm-wiki 05:31~05:37: 신규 277/갱신 61 → 총 15,973개(+246) · index.db 605.7MiB · 레지스트리 49폴더(신규·제거 0) · 게이트웨이 2일 22시간 가동.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>개인사이트 06:00: Activities 2,055 · 크론 45 · `62d8025` push → Pages 실서빙 확인.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>Wiki Git Backup 06:00: 커밋할 변경 없음, `origin/main` = `08a025d` = 로컬 HEAD 일치. (지정 키 `id_ed25519_meituan` 부재 → `id_ed25519` 폴백으로 정상)</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>memory-git-backup 01:00: memory(11-11.md·world_news)·skills 커밋 완료.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>세계뉴스(목) `world_news_20261112` 생성 · 기술뉴스 08:01 Geek/HN 각 5건·링크 10개 전수 검증·이메일 발송.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>AI 후보 저녁 제안 18:00: 후보 3선</strong> — Kimmel `KY9zDP4pH88` · JerryRig `k8W0Eb7sKss` · Sourav `b7HOQZdDVYA`.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>인기급상승: DB 836 → 880(하루 신규 44).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>⚠ 성과지표 23:30 2일 연속 실패</strong> — `export_stats.py` `build_trend`→`stack` **`KeyError: '2026-10-25'`**(daily_keys 14일 vs days 전체 순회). 1줄 패치 승인 대기 유지.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>search-backend exa 정상(HTTP 200) · supabase keepalive·park-empty watch·CAD 감시·로그 로테이션·일정 브리핑(예정 없음)</strong> — 전부 silent.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>arch-maker가 사람 개입 없이 크론 4회로 서버·클라 파서를 같은 규칙으로 수렴시켰다</strong> — 4F 도면이 실 이름까지 정확(13/13)하고 문·창 개구부를 읽는다. 남은 건 다중시트 경로와 브라우저 실플로우 검증.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>AI 해외화제는 오전이 조립·게이트까지 / 오후가 업로드만 이어받는 분업이 작동해 발행 0편 사고를 피했다(11-11은 마지막 `--go` 한 스텝을 못 밟았음).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>오전편에서 잡은 재발 방지 규칙 2건: ①`tts_gemini.py`는 기존 mp3가 있으면 건너뛰고 concat만 하므로 문장 수정 시 해당 `b0N.mp3` 삭제 후 재생성 ②macOS에 `timeout` 없음 → 크론에서 쓰지 말 것.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>최종 컷 검증은 contact sheet vision만 믿지 말고 픽셀 매칭(export 프레임 ↔ 원본 시각 mean-abs-diff)으로 확인</strong> — 이번에 9컷 전부 일치 확인.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-11-12</h3>
+										<p><strong>`publish_short.py`가 `categoryId`만 넘기고 `core.json_body()`는 `meta["category_id"]`를 읽어 24(엔터)로 저장되던 버그 수정(다음 런부터 28 적용, 이번 편은 예약 보존 위해 update 안 함).</strong></p>
+									</section>
+
+									<section>
 										<span class="icon solid fa-cloud-upload-alt"></span>
 										<h3>2026-11-11</h3>
 										<p><strong>EP07 「목걸이의 값」 `fA9Y7VudCKI` · 24.6MB · 2026-11-14 21:00 예약(12:00Z) · 16:41 업로드.</strong></p>
@@ -12879,7 +13065,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-11-05: 26 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-11-12: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-11-12: 31 activities"></div>
 
 										</div>
 
@@ -12910,12 +13096,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-11-06: 30 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-11-13: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">토</div>
-
-											<div class="heatmap-cell level-4" title="2026-08-15: 9 activities"></div>
 
 											<div class="heatmap-cell level-3" title="2026-08-22: 5 activities"></div>
 
@@ -12981,12 +13167,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">2246</div>
+										<div class="value">2277</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">182</div>
+										<div class="value">183</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -13005,17 +13191,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">1061</span></span>
+									<span class="category-tag">기타<span class="count">1081</span></span>
 
 									<span class="category-tag">연구<span class="count">398</span></span>
 
-									<span class="category-tag">자동화<span class="count">274</span></span>
+									<span class="category-tag">자동화<span class="count">278</span></span>
 
-									<span class="category-tag">개발<span class="count">137</span></span>
+									<span class="category-tag">개발<span class="count">139</span></span>
 
-									<span class="category-tag">운영<span class="count">117</span></span>
+									<span class="category-tag">운영<span class="count">119</span></span>
 
-									<span class="category-tag">설계<span class="count">65</span></span>
+									<span class="category-tag">설계<span class="count">68</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -13276,12 +13462,6 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-bell"></span>
-										<h3>기억상담소 애니편 발행</h3>
-										<p>매일 17:00 KST<br/>Job ID: <code>037d2fde8ffd</code><br/>상태: <span style="color:green">✅ ok</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
 										<h3>arch-maker CAD 변환 서비스 감시</h3>
 										<p>every 10m<br/>Job ID: <code>f0b83000528d</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
@@ -13289,19 +13469,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>건축이야기 발행</h3>
-										<p>매일 11:00 KST<br/>Job ID: <code>d6666007a03f</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>DXF 변환 개선 야간 작업</h3>
-										<p>매일 1,3,5:30 KST<br/>Job ID: <code>d6df72d8696c</code><br/>상태: <span style="color:green">✅ ok</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
-										<h3>DXF 변환 개선 07시 보고</h3>
-										<p>매일 07:00 KST<br/>Job ID: <code>3810c965f6d4</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+										<p>매일 11:00 KST<br/>Job ID: <code>d6666007a03f</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 								</div>
@@ -13343,6 +13511,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-11-12 06:00 KST -->
+	<!-- Last updated: 2026-11-13 06:00 KST -->
 	</body>
 </html>
