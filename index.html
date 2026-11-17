@@ -425,6 +425,186 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>발단: BJ</strong> — 「인천 서구 당하동 1264-8, 단독주택 부지인데 주소 조회 시 상가주택 제안서가 나온다」.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>한도 규칙 교정: `13a0b8b` 요청 내역→프로그램 연결 + 단독주택 50/80(건폐 50%·용적 80%) 적용, 대장 값 최우선(`ee9b5cf` 건축물대장 자동 조회 PNU→BldRgstHubService 연동). `772ed97` 한도를 최대한 채우는 캘리브레이션.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cogs"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>구성·주차: `0ed17a8` EV·계량기실 제거(계단실 흡수) → `047584b` 단독주택 전용 구성(1F 거실·방1·욕실1 / 2F 방2·거실·욕실1 + 주차 1대) → `2c4bd22`·`2a57b1b`·`61a8b98` 주차 1대는 대지 안·짧은 변에 평행(5.0×2.5), 나머지에 건폐 한도까지 외곽 채움.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>3D 반영 문제: BJ 「요청 변경사항 넣고 3D 생성하면 반영이 안 되는 느낌」 → `4fc91f3` 치수는 조회 결과로 고정(요청문은 마감·지붕·층고·층수만) + 적용 항목 요약 표시. `21488cf` 조회 한도 캘리브레이션 2회·층수 탐색 제거로 속도 개선.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>기본 도면 교체: `03f2185` 내보낸 JSON(원당동 1000-15 동쪽수정3)을 시작 기본 도면으로 + 요청란 초기화 → `bca09e2` 23:09 내보낸본으로 갱신(대지 275.9㎡·5층·1F 5실+주차 4면).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>3D 기둥: `442ecea` 기둥 레이어는 항상 숨김으로 시작(저장된 표시상태가 켜져 있어도 무시).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>배포: `1ce5228..bca09e2` 푸시(14커밋) → Vercel success, 번들에 `col:false` 반영 확인.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bug"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>`d8e89bf` 단독주택 도면 깨짐·마감 미반영 수정, `1ce5228` CAD 감시 ngrok 자동 재기동.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>`f33163e` EP02 주제 확정 + 편번호 재편(공 EP03·샤프트 EP04) → `f876aa5` 대본 96컷 8챕터(7분56초, 근거 약한 손목은 3컷 축약) → `7f6013d` MG 씬 9종 신규 + 96컷 조립 5:15.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>`56ac578` 인포그래픽-자막 정합(자막 숫자 기준 82컷 재배치, 신규 카운터 7종: 핸디캡·0.28초·4.7/5.7mph·1.5/1프레임·66kg), 세로 스윙영상 c74/c82 이동.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>`b8986cf` 골프 원리 롱폼 제작 표준 폼 문서화(`docs/골프_원리_제작_표준폼.md`</strong> — 8챕터 96컷, say/text 분리, 자막 y852/66).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>롱폼 예약: `57hklSwuuDs` 「스윙의 힘은 어디서 오나? 0.28초에 갈리는 힘 전달의 원리」 2026-11-18 19:00 · PLAv-Y4SFotdk. 쇼츠 S1~S8 조립 완료(발행 대기).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>BJ: 「이 영상 보고 기술 익히자」 → `youtu.be/M9P_FgsR7J4` (Everything Convert · 3D 도시 타임랩스, three.js+Remotion, OSM 데이터로 건물을 코드로 세움).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>`~/projects/city-timelapse` 생성 → `scripts/osm_fetch.py` 작성. Overpass가 urllib TLS에서 실패 → `curl` 폴백 + 미러 4개 순차 재시도로 해결.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>당하동 1200m 실측: OSM way 225개 = 유효 건물 225 / 높이 142(63%) / 연도 133 / 연도범위 1998~2025 / 최고 91m → `out/buildings_dangha.json`. 서울 데이터(`buildings_seoul.json`)도 확보.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>AI오전편 「운전석이 텅 비었다ㅋㅋ 기사 없이 1,600km 달리는 트럭」 `TJ4dlJVgBrY` · 12:00 · 소재 TzPSWtI20e8(Aurora, 배율 17.7x) · 35.56s.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>AI오후편 「2016년에 이미 이랬습니다ㅋㅋ 농부 없이 24시간 밭 갈던 트랙터」 `0a4Tjmc8G5I` · 20:00 · 소재 T7Os5Okf3OQ(CNH, 배율 119.1x) · 52.5s · 오전 후보 5건 전량 탈락(중복·토킹헤드) 후 키워드 16종 재발굴.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>건축이야기 EP9 「콜로세움 : 8만 석을 15분에 비운 80개 문」 `fgcAKzN2fVM` · 11:55 · verify ok · ep09_콜로세움_최종.mp4(33.1MB).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>골프 원리 S4 「같은 100마일인데 20야드 차이」 `GVFUJptYxsA` · 11:00 / S5 「손목이 아니라 페이스다」 `vv9jD9YL70U` · 20:00 · 발행 5/8.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>롱폼04 「성 바실리」 완주(4일 연속): 8챕터 96컷·2,571자·장면 32 실패0, TTS 321.99초 → build 355.4초, 마스터 887MB(1920×1080, −16.2 LUFS / peak −0.8). 근거 약한 사실 6건(눈 뽑았다·65m·8교회 상징 등)은 대본에서 제외. 다음 큐 = 노트르담.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>코스피 4,968.48(−2.59%)</strong> — **4거래일 연속 하락, 5,000선 붕괴**(2/2 이후 약 9개월 반 만). 코스닥 650.06(−2.34%) · KOSPI200 770.74(−2.63%).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>수급: 코스피 외국인 −1조4,459억(3일 연속 매도) / 개인 +4,217억 / 기관 +5,435억. 시총 상위 전 종목 하락(삼성전자 −3.30%, SK하이닉스 −1.96%).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>옵토닉스 상장 첫날 +110%대 · 아리바이오랩 하한가(−29.95%, AR1001 3상 지표 미충족).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>계좌 4,696,272원(−6.08%) · 예수금 4,254,807원(90.6%) · 411060 19주 @23,235(−12.92%) · bear 1일째·노출 0%.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>400회 / completed 400 / 실패 0. 상시 감시: 영상허브 144 · CAD 감시 131 · park-empty 66 · 인기급상승 24.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>llm-wiki(05:30): 인덱스 12,962개·`index.db` 152MiB(외장 이관으로 −459MiB), 레지스트리 51폴더. 게이트웨이 무재시작 7일 22시간 경고 지속.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>post1 `bc45f94`(Activities 2,186) · 기술뉴스 10건 메일 발송 · 쇼츠 소재 이관 2세트/36개/0.34GB(SSD 여유 45GB).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>arch-maker가 "단독주택"이라는 한 케이스에서 규칙 4개를 새로 얻었다</strong> — 한도(50/80·대장 우선·최대 채우기), 구성(1F 거실+방1+욕실1), 주차(대지 안·짧은 변 평행 1대), 그리고 **치수는 조회 결과에 고정**하고 요청문은 마감·형태만 결정한다는 역할 분리. 앞의 셋은 BJ가 문장으로 준 규칙, 마지막 하나는 "반영이 안 되는 느낌"의 원인을 구조에서 찾아낸 결과다.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-database"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>골프 EP02는 제작 방식 자체를 표준화하며 끝냈다</strong> — Blender 컷을 실사 스틸+팬으로 바꿔 렌더를 160배 줄였고(전일), 이번엔 자막 숫자 기준으로 그래픽을 재배치하고 `say`/`text`를 분리해 "나레이션은 한글, 자막은 숫자" 요구를 구조로 해결했다.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-11-17</h3>
+										<p><strong>3D 도시 타임랩스(three.js+Remotion)를 새로 시작</strong> — 생성 AI가 아니라 코드로 건물을 세우는 방식이라 arch-maker·OSM 자산과 접점이 크다. 첫 관문(Overpass TLS 실패)은 curl 폴백으로 뚫었고, 당하동 225동을 실제로 받아왔다.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
 										<h3>2026-11-16</h3>
 										<p><strong>⑦ 배수·설비: `ec66918` PS 후보 판정(상가 천장 관통·층간 정렬) → `d6988e6` DFU 누적(표 4.1-2) → 수직관 관경(표 4.1-5)·통기관·샤프트 치수 산정 → `8af9f35` 판정 기준을 KDS 31 30 25로 교체(수직관 지름 10배·구배·통기·청소구) → `8acb729` 평면 변경 시 자동 재판정 + 알림 배너, 기준점검 체크리스트에 배수·설비 항목 추가.</strong></p>
 									</section>
@@ -13603,7 +13783,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-11-10: 19 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-11-17: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-11-17: 30 activities"></div>
 
 										</div>
 
@@ -13634,12 +13814,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-11-11: 30 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-11-18: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">목</div>
-
-											<div class="heatmap-cell level-4" title="2026-08-20: 16 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-08-27: 10 activities"></div>
 
@@ -13767,12 +13947,12 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">2377</div>
+										<div class="value">2407</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">187</div>
+										<div class="value">188</div>
 										<div class="label">활동 일수</div>
 									</div>
 
@@ -13791,17 +13971,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">1155</span></span>
+									<span class="category-tag">기타<span class="count">1179</span></span>
 
 									<span class="category-tag">연구<span class="count">402</span></span>
 
 									<span class="category-tag">자동화<span class="count">283</span></span>
 
-									<span class="category-tag">개발<span class="count">141</span></span>
+									<span class="category-tag">개발<span class="count">142</span></span>
 
-									<span class="category-tag">운영<span class="count">122</span></span>
+									<span class="category-tag">운영<span class="count">123</span></span>
 
-									<span class="category-tag">설계<span class="count">80</span></span>
+									<span class="category-tag">설계<span class="count">84</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -14114,6 +14294,18 @@ section h2 {
 										<p>매일 03:00 KST<br/>Job ID: <code>f2eb6d605d40</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>SSD 월간 유지보수 (매월 1일 04:00)</h3>
+										<p>매일 04:00 KST<br/>Job ID: <code>15924c53ef0a</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-bell"></span>
+										<h3>쇼츠 소재 외장 이관 (업로드 후 · 매일 17:00)</h3>
+										<p>매일 17:00 KST<br/>Job ID: <code>86064516933a</code><br/>상태: <span style="color:green">✅ ok</span></p>
+									</section>
+
 								</div>
 
 							</div>
@@ -14153,6 +14345,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-11-17 06:00 KST -->
+	<!-- Last updated: 2026-11-18 06:00 KST -->
 	</body>
 </html>
