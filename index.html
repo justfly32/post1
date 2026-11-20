@@ -425,6 +425,186 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>BJ 방향 확정(00:00): EP03 = 스윙의 궤도, EP04 = 클럽이 공을 미는 방식, 시리즈 축을 "실전 상황별 스윙 시뮬레이션"으로 재편.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>`docs/plan_swing-series.md` 8편 축 + 엔진 지원 매트릭스. 챕터 6 → 8챕터·96컷(EP01·EP02 템플릿 12컷/챕터 재사용)으로 확장.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>숫자는 프리셋 5종 통째 측정(원인 분리 불가)을 버리고 단일 변수 10건 재측정: 기준 캐리 227.7m / 페이스 +2.5도만 → +33.1m / 패스 −6.5도만 → +48.6m.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>길이: 8분 목표 → 실제 315.3초(5분15초). 원인은 대본이 아니라 TTS 속도(1,800자/244초). BJ 선택 A(그대로 발행).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>인서트 결함: 5.5~8초 인서트가 컷 길이 규칙(`max(3.0초, 나레이션+0.18)`)에 잘려 표 5행 중 2행만 노출 → 인서트를 컷 길이에 맞춰 전량 재생성.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>★ BJ 지시(11:32): "골프는 프롬프트로 이미지 생성 금지" → 생성 스틸 34장 `_rejected_generated/`로 폐기, EP01 shots 26장 + 구EP03 shots 10장 + `_footage`(own 9·mixkit 14 등)으로 재구성.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>★ 자산 체계(12:02~13:15): `_library/{화이트리스트 37, 검증필요 139, 인서트 19}` + `S/V/G` 번호 + 콘택트시트 + `index.json` + `LIST.md`. 화이트리스트 37개(EP01 26스틸·EP02 11영상)만으로 96컷 재편(최다 5회, 대부분 2~3회).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>최종: 1920×1080 · 315.3초 · −16.5 LUFS(피크 −0.8 dB) · 96컷 · 마스터 743MB(빌드 후 410MB) · 업로드용 27.3MB 전달. build9~13은 폰트·문구 수정 반복.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-paint-brush"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>★ 깨진 글자 원인: GmarketSansTTFBold cmap에 U+2212 '−' 없음 → 네모/x. `≠ · ° × ‘ ’ …</strong> — ± ▶ ■ ● ※`는 전부 정상. 인포그래픽↔자막 의미 정합도 함께 수정(인포그래픽 26종 + 엔진 렌더 15종, 실사 사진 0장).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>오전 `x0SLw9pzjm4` 「쇄빙선 얼음을 깨는 게 아니라 눌러 부순다」 12:00 · 23자 · 재생목록 42개.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>오후 `d2ZHmiXU1a4` 「세계 최장 아치교 기둥 하나 없이 600미터를 건넜다」 21:00 · 29자 · 소재 388,073회/구독 2,480 = 배율 150.4x · 44.42s · −14.1 LUFS · 자막 429 → Gemini 오디오 전사(4분 분할) 대체 · seam 검사로 분할 프레임 배제.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-utensils"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>폐기: `[감정 후킹]+[주제]+[추임새] | AI 해외화제 #Shorts`</strong> — 꼬리표 15자가 40자 중 **37%** 잠식, 검색어가 뒤로 밀리고 썸네일 문구와 중복.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-utensils"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>신규: `[핵심 검색어][결과·상태변화 한 줄]`</strong> — 검색어 **앞 20자 안**, 32자 목표·40자 초과 차단, `|`·`#` 금지, 썸네일 문구 bigram 유사도 **0.55 초과 실패**.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-cloud-upload-alt"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>`tools/title_rule.py` 검증기 + `docs/제목_규칙.md` + 스킬 `k-shorts-automaker` 갱신. 기발행 3편 소급 금지.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-rocket"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>함정: 크론은 시작 시점 프롬프트를 복사한다</strong> — 09:00 오전편은 v1로 출발(수정 09:08)이라 12:00 발행분만 구 규칙 적용.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>여유 35GB → 49GB. `.hermes` 25G→13G(진짜 범인은 `browser-profile/chrome/Default/blob_storage`), `my-media-agent` 19G→17G.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>`longform_build.py`에 `archive_master()`(마스터 → `/Volumes/My Passport/my-media-agent/masters/...` move + 심볼릭 링크 + `_archive.json`) + `cleanup_subs()`(자막 프레임 수천 장) 추가. `MEDIA_ARCHIVE_ROOT`로 경로 변경, `NO_ARCHIVE=1`로 해제</strong> — 기존 스크립트는 경로 그대로 동작.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>자동차 1편 676MB → 50MB(중간·버전 렌더 21개 626MB 삭제, 최종·small·archive.json 유지).</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>숏츠 ep01~ep10 발행 완료, ep11~16은 롱폼(보류) → `d6666007a03f` paused(11:01). 롱폼 재개 시 함께 복구.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>코스피 4,869.96(−267.93, −5.21%) · 코스닥 645.68(−5.71%) · 코스피200 756.85(−5.34%) · 원/달러 1,336.20(+6.20) · WTI 83.53.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>매도 사이드카 11:54 코스피 / 13:28 코스닥(10거래일 만 동시). 외국인 −1조1,335억·기관 −9,508억 vs 개인 +1조5,955억, 외국인 6거래일 연속 매도.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>급등 한진칼우 +29.99%(호반 vs 조원태 지분 경쟁) / 급락 SK텔레콤 −13.09%·삼성전기 −12.54%·이수페타시스 −16.14%.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>총자산 4,657,267원(−0.39%) · 예수금 4,211,017(90.4%) · 411060 21주 평단 26,225 → 21,250(−18.97%) · 누적 −6.86%.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>체결: 장후코어 411060 1주 15:45(호가유형 71) 21,250원. 장중 알파 신호 0. bear 1일째 · 노출 0%.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>599회 / completed 599 / 실패 0. 상시: 영상허브 144 · arch-maker 변환서버 132+131 · park-empty 66 · 예측 페이지 가드 47 · 인기급상승 24 · 조기조회 23 · supabase keepalive 4.</strong></p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-file-invoice"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>제목 규칙이 "감정 우선"에서 "검색어 우선"으로 뒤집혔다</strong> — 실측 3편(1,010~2,035뷰)의 꼬리표가 예산 40자 중 15자를 먹고 있었고, 목표 지표는 검색 유입 3.5%→10%였다. 규칙은 문서·스킬·크론·검증기 네 곳을 같이 고쳐야 재발하지 않는다.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>EP03에서 "AI 생성 금지"가 자산 관리 체계로 굳었다</strong> — 생성 스틸 34장 폐기 → 37개 화이트리스트 + 번호·콘택트시트·인덱스. 다음 편부터는 "무엇을 쓸 수 있는가"를 먼저 보고 자르게 된다.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>두 번의 결함 모두 소재가 아니라 규칙 문제였다</strong> — 인서트가 잘린 건 컷 길이 공식, 글자가 깨진 건 폰트 cmap(U+2212). 눈에 보이는 증상과 원인 층이 다르다.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>길이 예측을 글자수로 하면 틀린다</strong> — 8분 설계가 5분15초로 나온 건 TTS 낭독 속도(초당 0.138자) 때문. 다음 편은 실측 낭독 속도로 역산해야 한다.</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-code"></span>
+										<h3>2026-11-20</h3>
+										<p><strong>디스크 범인은 그날 작업이 아니었다</strong> — blob_storage. 대신 편당 ~800MB 마스터가 쌓이는 구조는 빌드 자동 이관으로 막았다(사람이 매번 지우지 않게).</p>
+									</section>
+
+									<section>
+										<span class="icon solid fa-check-circle"></span>
 										<h3>2026-11-19</h3>
 										<p><strong>기준선 실측(채널 개설 31일): 구독 20 · 총 조회 46,872 · 영상 105편(쇼츠 75·롱폼 30) · 쇼츠 중앙 477(p90 1,147·최대 2,035) · 롱폼 중앙 41(전체의 5.5%) · 구독 전환 0.043%.</strong></p>
 									</section>
@@ -14266,7 +14446,7 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-11-13: 31 activities"></div>
 
-											<div class="heatmap-cell level-0 today" title="2026-11-20: 0 activities"></div>
+											<div class="heatmap-cell level-4" title="2026-11-20: 30 activities"></div>
 
 										</div>
 
@@ -14297,12 +14477,12 @@ section h2 {
 
 											<div class="heatmap-cell level-4" title="2026-11-14: 29 activities"></div>
 
+											<div class="heatmap-cell level-0 today" title="2026-11-21: 0 activities"></div>
+
 										</div>
 
 										<div class="heatmap-row">
 											<div class="heatmap-row-label">일</div>
-
-											<div class="heatmap-cell level-4" title="2026-08-23: 7 activities"></div>
 
 											<div class="heatmap-cell level-4" title="2026-08-30: 8 activities"></div>
 
@@ -14337,17 +14517,17 @@ section h2 {
 								<div class="stats-grid">
 
 									<div class="stats-card">
-										<div class="value">2472</div>
+										<div class="value">2502</div>
 										<div class="label">총 활동</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">190</div>
+										<div class="value">191</div>
 										<div class="label">활동 일수</div>
 									</div>
 
 									<div class="stats-card">
-										<div class="value">4.7</div>
+										<div class="value">4.8</div>
 										<div class="label">일 평균</div>
 									</div>
 
@@ -14361,17 +14541,17 @@ section h2 {
 
 								<div class="category-tags">
 
-									<span class="category-tag">기타<span class="count">1228</span></span>
+									<span class="category-tag">기타<span class="count">1251</span></span>
 
 									<span class="category-tag">연구<span class="count">404</span></span>
 
-									<span class="category-tag">자동화<span class="count">287</span></span>
+									<span class="category-tag">자동화<span class="count">289</span></span>
 
-									<span class="category-tag">개발<span class="count">142</span></span>
+									<span class="category-tag">개발<span class="count">145</span></span>
 
 									<span class="category-tag">운영<span class="count">126</span></span>
 
-									<span class="category-tag">설계<span class="count">91</span></span>
+									<span class="category-tag">설계<span class="count">93</span></span>
 
 									<span class="category-tag">협업<span class="count">3</span></span>
 
@@ -14620,12 +14800,6 @@ section h2 {
 
 									<section>
 										<span class="icon solid fa-bell"></span>
-										<h3>건축이야기 발행</h3>
-										<p>매일 11:00 KST<br/>Job ID: <code>d6666007a03f</code><br/>상태: <span style="color:green">✅ ok</span></p>
-									</section>
-
-									<section>
-										<span class="icon solid fa-bell"></span>
 										<h3>영상허브 갱신 (07:40)</h3>
 										<p>매일 07:40 KST<br/>Job ID: <code>79717d2c6a04</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
@@ -14687,7 +14861,7 @@ section h2 {
 									<section>
 										<span class="icon solid fa-bell"></span>
 										<h3>yt_brief (통합 아침 브리핑)</h3>
-										<p>매일 09:10 KST<br/>Job ID: <code>c81da6aea5e4</code><br/>상태: <span style="color:gray">❓ unknown</span></p>
+										<p>매일 09:10 KST<br/>Job ID: <code>c81da6aea5e4</code><br/>상태: <span style="color:green">✅ ok</span></p>
 									</section>
 
 									<section>
@@ -14735,6 +14909,6 @@ section h2 {
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	<!-- Last updated: 2026-11-20 06:00 KST -->
+	<!-- Last updated: 2026-11-21 06:00 KST -->
 	</body>
 </html>
